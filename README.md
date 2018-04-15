@@ -6,3 +6,5 @@ Web-client-term-project
 * [Github Wiki](https://github.com/minwook-shin/web-client-term-project/wiki)
 
 * [Project Todo](https://github.com/minwook-shin/web-client-term-project/projects)
+
+* [Milestone](https://github.com/minwook-shin/web-client-term-project/milestones)
