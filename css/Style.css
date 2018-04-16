@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/**
+* Web client term project CSS file
+* @author minwook-shin
+*/
+
+/* Default code - Remove padding and margin */ 
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+
+/* Default code - Set position */ 
+
+.clear { 
+    clear:both; 
+} 
+
+.right { 
+    float: right; 
+} 
+
+.left { 
+    float: left; 
+}
+
+/* Button */
+
+/* Navigation bar */
