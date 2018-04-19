@@ -10,6 +10,10 @@ Web-client-term-project
 <link rel="stylesheet" type="text/css" href="css/Style.css">
 ```
 
+* Check the Web documents.
+
+[Markup Validation Service](http://validator.w3.org/)
+
 ## GIT command line
 
 * Git install
