@@ -1,6 +1,12 @@
 # web-client-term-project
 Web-client-term-project
 
+## Demo Site
+
+[site link](https://minwook-shin.github.io/web-client-term-project/)
+
+Caution: This repository is private, but the published site will be public. 
+
 ## Development
 
 * Standard Style code.

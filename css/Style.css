@@ -5,11 +5,18 @@
 * @author minwook-shin
 */
 
+/* Nanum font */
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+
+
 /* Default code - Remove padding and margin */ 
-* { 
+body { 
     margin: 0; 
     padding: 0; 
     border: 0; 
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* Default code - Set position */ 
@@ -26,6 +33,90 @@
     float: left; 
 }
 
+/* Color */
+
+.black{
+    background-color: black;
+    color: white;
+    border: 10px soild black;
+}
+
+.white{
+    background-color: white;
+    color: black;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+
+.orange{
+    background-color: orange;
+    color: white;
+}
+
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+
+.green{
+    background-color: green;
+    color: white;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}
+
+.indigo{
+    background-color: indigo;
+    color: white;
+}
+
+.purple{
+    background-color: purple;
+    color: white;
+}
+
+.aqua{
+    background-color: aqua;
+    color: black;
+}
+
+.pink{
+    background-color: pink;
+    color: black;
+}
+
+.gray{
+    background-color: gray;
+    color: white;
+}
+
 /* Button */
+
+.button {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px 15px 5px 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.round{
+    border-radius: 10px;
+}
+
+.circle{
+    border-radius: 2em;
+}
+
+.border{
+    border: 10px soild black;
+}
+
 
 /* Navigation bar */
