@@ -12,6 +12,9 @@ Caution: This repository is private, but the published site will be public.
 * [Button Part](https://minwook-shin.github.io/web-client-term-project/css/button_test.html)
 
 
+* [Input Part](https://minwook-shin.github.io/web-client-term-project/css/input_test.html)
+
+
 ## Development
 
 * Standard Style code.
