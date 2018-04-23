@@ -3,9 +3,14 @@ Web-client-term-project
 
 ## Demo Site
 
-[site link](https://minwook-shin.github.io/web-client-term-project/)
+* [Site link](https://minwook-shin.github.io/web-client-term-project/)
 
 Caution: This repository is private, but the published site will be public. 
+
+## CSS preview Site
+
+* [Button Part](https://minwook-shin.github.io/web-client-term-project/css/button_test.html)
+
 
 ## Development
 
