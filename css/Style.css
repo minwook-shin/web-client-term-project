@@ -13,10 +13,14 @@
 
 /* Default code - Remove padding and margin */ 
 body { 
-    margin: 0; 
+    margin-top: 50px; 
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0; 
     border: 0; 
     font-family: 'Nanum Gothic', sans-serif;
+    background-color: whitesmoke;
 }
 
 /* Default code - Set position */ 
@@ -121,7 +125,7 @@ body {
 /* Input */
 
 .full {
-    width: 90%;
+    width: 100%;
 }
 
 .half{
@@ -148,3 +152,32 @@ body {
 
 
 /* Navigation bar */
+
+.navi{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+}
+
+.list {
+    float: left;
+}
+
+.select {
+    display: block;
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: lightsteelblue;
+    color: black;
+}
