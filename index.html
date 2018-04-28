@@ -10,14 +10,30 @@
     <link rel="stylesheet" type="text/css" href="css/Style.css">
     <title>Main</title>
     <style>
-        section div#main-image{
-            width:100%;
-            height:25em;
-            background-color:green; /* main-image범위 테스트용 */
+        section div#main-image {
+            position:relative;
+            margin-top:4.4em;
+            display: block;
+            width: 100%;
+            height: 30em;
         }
+        .backgroundimg {
+            width:100%;
+            height:100%;
+        }
+        .backgroundtext {
+            color: white;
+            font-weight: 600;
+            font-size:5em;
+            position: absolute;
+            bottom: 40%;
+            right: 35%;
+        }
+        
         section div#notice , div#community{
+            display:inline-block;
             margin:10px 10px 10px 10px;
-            width:300px;
+            width:280px;
             height:15em;
             background-color:orange; /* notice page*/
             float:left
@@ -40,7 +56,7 @@
     <nav>
         <ul class="full navi">
             <li class="list">
-                <a class="select active" href="#" ><img src="media/logo-image" alt="LOGO" /><h2></h2></a>
+                <a class="select active" href="#" >LOGO<h2></h2></a>
             </li>
             <li class="list">
                 <a class="select" href="/web-client-term-project/intro/intro-page.html">소개</a>
@@ -64,13 +80,14 @@
     </nav>
     <section>
         <div id="main-image">
-            <img src="media/main-image.jpg" alt="메인 이미지"/>
+            <img src="image/main-image.jpg" alt="메인이미지" class="backgroundimg"/>
+            <div class="backgroundtext">
+                Kookmin <br />
+                Software
+            </div>
         </div>
         <div id="notice">
             <h3>공지</h3>
-            <ul class="navi">
-                <li class="list"></li>
-            </ul>
         </div>
         <div id="community">
             <h3>커뮤니티</h3>
