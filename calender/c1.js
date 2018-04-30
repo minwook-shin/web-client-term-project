@@ -1,4 +1,4 @@
-//현재 달력 표시ㅜㅜ
+//현재 달력 표시
 
     var monthName=new Array("1월","2월","3월","4월","5월","6월","7월",
     "8월","9월","10월","11월","12월")
@@ -24,14 +24,14 @@ function showCalendar(day,month,year)
 
   calStr+="</td></tr>" 
 
-  calStr+="<tr align=center bgcolor='#336666'>"
+  calStr+="<tr align=center bgcolor='black'>"
   calStr+="<th><font color='red' size='2'>일</font></th>"
   calStr+="<th><font color='white' size='2'>월</font></th>"
   calStr+="<th><font color='white' size='2'>화</font></th>"
   calStr+="<th><font color='white' size='2'>수</font></th>"
   calStr+="<th><font color='white' size='2'>목</font></th>"
   calStr+="<th><font color='white' size='2'>금</font></th>"
-  calStr+="<th><font color='#66CCFF' size='2'>토</font></th>"
+  calStr+="<th><font color='white' size='2'>토</font></th>"
   calStr+="</tr>" 
 
   var dayCount=1
