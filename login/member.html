@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <center>
     <ul class="full navi">
         <li class="list">
             <a class="select" href="/web-client-term-project/">LOGO</a>
@@ -29,20 +30,17 @@
             <a class="select active" href="#">로그인</a>
         </li>
     </ul>
-
-    학번:
-    <input class="short round input" type="text" placeholder="학번을 입력하세요">
-    <br> 비밀번호:
-    <input class="short round input" type="text" placeholder="비밀번호를 입력하세요">
-    <br>
-    <button class="yellow circle button">Login</button>
-
-    <div class="search">
-        <form action="#">
-            <input type="text" name="search" placeholder="Enter keyword" />
-            <input class="white circle button" type="submit" value="Search here" />
-        </form>
+    <div class="user-account">
+        <ul style="list-style:none">
+            <p><li style="list-style:none"><strong>학번 / 사번 : </strong><span><input class="short round input" type="text" name="school_num" /></span></li></p>
+            <p><li style="list-style:none"><strong>비 밀 번 호 : </strong><span><input class="short round input" type="password" name="pw" /></span></li></p>
+        </ul>
+        <div class="login-sumbit">
+            <!-- <input type="image" src="/images/v2015/btn_login.png" alt="" /> -->
+            <button class="yellow circle button">로그인</button>
+        </div>
     </div>
+    </center>
 </body>
 
 </html>
