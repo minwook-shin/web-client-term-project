@@ -12,8 +12,8 @@
     <style>
         section div#main-image {
             position:relative;
-            margin-top:4.4em;
-            display: block;
+            margin-top:1.3em;
+            display: inline-block;
             width: 100%;
             height: 30em;
         }
@@ -29,6 +29,11 @@
             bottom: 40%;
             right: 35%;
         }
+        section div#others{
+            width:100%;
+            height:15em;
+            display:inline;
+        }
         
         section div#notice , div#community{
             display:inline-block;
@@ -39,9 +44,11 @@
             float:left
         }
         section div#community{
+            display:inline-block;
             background-color:darkblue;
         }
         section div#calander {
+            display:inline-block;
             margin:10px 10px 10px 10px;
             width:600px;
             height:15em;
@@ -86,14 +93,16 @@
                 Software
             </div>
         </div>
-        <div id="notice">
-            <h3>공지</h3>
-        </div>
-        <div id="community">
-            <h3>커뮤니티</h3>
-        </div>
-        <div id="calander">
-            <h3>학사 일정</h3>
+        <div id="others">
+            <div id="notice">
+                <h3>공지</h3>
+            </div>
+            <div id="community">
+                <h3>커뮤니티</h3>
+            </div>
+            <div id="calander">
+                <h3>학사 일정</h3>
+            </div>
         </div>
     </section>
 </body>
