@@ -8,45 +8,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../css/Style.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>MEMBER</title>
     <style>
-        .user-account{
-        background-color: aliceblue;
-        width: 360px;
-        padding: 1% 0 1%;
-        margin: auto;}
-
+        .user-account {
+            background-color: aliceblue;
+            width: 360px;
+            padding: 1% 0 1%;
+            margin-top: 25em;
+        }
     </style>
 </head>
 
 <body>
     <center>
-    <ul class="full navi">
-        <li class="list">
-            <a class="select" href="/web-client-term-project/">LOGO</a>
-        </li>
-        <li class="list">
-            <a class="select" href="/web-client-term-project/intro/intro-page.html">소개</a>
-        </li>
-        <li class="list">
-            <a class="select" href="/web-client-term-project/notice/notice-page.html">공지</a>
-        </li>
-        <li class="list">
-            <a class="select" href="/web-client-term-project/calender/calender-page.html">일정</a>
-        </li>
-        <li class="list">
-            <a class="select active" href="#">로그인</a>
-        </li>
-    </ul>
-    <div class="user-account">
-        <ul style="list-style:none">
-            <p><li style="list-style:none"><strong>학번 / 사번 : </strong><span><input class="half round input" type="text" name="school_num" /></span></li></p>
-            <p><li style="list-style:none"><strong>비 밀 번 호 : </strong><span><input class="half round input" type="password" name="pw" /></span></li></p>
-        </ul>
-        <div class="login-sumbit">
-            <button class="yellow circle button">로그인</button>
+        <nav class="navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/index.html">
+                        <img alt="KMU CS" src="">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/intro/intro-page.html">학부 소개</a>
+                    </li>
+                    <li>
+                        <a href="/notice/notice-page.html">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="/calender/calender-page.html">일정</a>
+                    </li>
+                    <li class="active">
+                        <a href="/login/member.html">로그인</a>
+                    </li>
+
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="키워드를 입력해주세요.">
+                    </div>
+                    <button type="submit" class="btn btn-default">검색하기</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="user-account">
+            <ul style="list-style:none">
+                <p>
+                    <li style="list-style:none">
+                        <strong>학번 / 사번 : </strong>
+                        <span>
+                            <input class="half round input" type="text" name="school_num" />
+                        </span>
+                    </li>
+                </p>
+                <p>
+                    <li style="list-style:none">
+                        <strong>비 밀 번 호 : </strong>
+                        <span>
+                            <input class="half round input" type="password" name="pw" />
+                        </span>
+                    </li>
+                </p>
+            </ul>
+            <div class="login-sumbit">
+                <button class="yellow circle button">로그인</button>
+            </div>
         </div>
-    </div>
     </center>
 </body>
 
