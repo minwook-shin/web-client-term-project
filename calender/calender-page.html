@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex">
@@ -7,52 +8,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../css/Style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>CALENDER</title>
     <html>
-<style>
-<<<<<<< HEAD
-    html, body{margin :0; padding 0; height:100%;}
-    .nav{width:30%; height: 80%; float:left; background-color :pink;}
-    .section{width : 70%;height : 80%; float :left; background-color:green;}
-=======
-    html, body{margin:0; padding:0; height:100%;}
-    .nav{width:30%; height:100%; float:left; background-color:pink;}
-    .section{width:70%;height:100%; float:left;background-color:green;}
->>>>>>> 83162f26317860d13c74aba28efba352057f0f26
-</style>
+    <style>
+        .cal {
+            padding-left: 300px white;
+            display: inline-block;
+            height:100%;
+            width: 30%;
+            margin-top: 3.5em
+        }
+	table{
+		background-color:beige; 
+		text-align : center; 
+		
+		margin :auto;
+	}
+	caption{background-color : beige;}
+	span { color : red;}
+    </style>
 </head>
 
 <body>
-    <ul class="full navi">
-        <li class="list">
-            <a class="select" href="/web-client-term-project/">LOGO</a>
-        </li>
-        <li class="list">
-            <a class="select" href="/web-client-term-project/intro/intro-page.html">소개</a>
-        </li>
-        <li class="list">
-            <a class="select" href="/web-client-term-project/notice/notice-page.html">공지</a>
-        </li>
-        <li class="list">
-            <a class="select active" href="#">일정</a>
-        </li>
-        <li class="list">
-            <a class="select" href="/web-client-term-project/login/member.html">로그인</a>
-        </li>
-    </ul>
-<<<<<<< HEAD
-    <p>현재 깃허브 호스팅으로 유지되는 이 페이지가 일정 페이지입니다.
-    버튼과 입력을 테스트합니다.
-    <input class="short circle input" type="text" placeholder="Enter your text">
-    <button class="aqua circle button">Button</button><p>
-    <nav class = "nav">calendar</nav>
-    <section class = "section">일정내보내기</section>
-   <!-- <div style = "background-color : orange;">calendar</div>
-    <div style = "background-color : green; width : 40~100%;">일정내보내기</div>
--->
-=======
-    <nav class="nav">calendar</nav>
-    <section class="section">일정내보내기</section>
->>>>>>> 83162f26317860d13c74aba28efba352057f0f26
+    <nav class="navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/web-client-term-project/index.html">
+                    <img alt="KMU CS" src="">
+                </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/web-client-term-project/intro/intro-page.html">학부 소개</a>
+                </li>
+                <li>
+                    <a href="/web-client-term-project/notice/notice-page.html">공지사항</a>
+                </li>
+                <li class="active">
+                    <a href="/web-client-term-project/calender/calender-page.html">일정</a>
+                </li>
+                <li>
+                    <a href="/web-client-term-project/login/member.html">로그인</a>
+                </li>
+
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="키워드를 입력해주세요.">
+                </div>
+                <button type="submit" class="btn btn-default">검색하기</button>
+            </form>
+        </div>
+    </nav>
+    <div class="cal" style="background-color : orange;">calendar
+	<div>
+	<table>
+	<caption>1월</caption>
+	<thead>
+	<tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+	</thead>
+	<tbody>
+	<tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td><span>7</span></td><td>8</td><td>9</td><td>10</td><td>11</td><Td>12</td><td>13</td></tr><tr><td><span>14</span></td><td>15</td><td>16</td><Td>17</td><td>18</td><Td>19</td><td>20</td></tr><tr><td><span>21</span></td><Td>22</td><td>23</td><Td>24</td><Td>25</td><Td>26</td><Td>27</td></tr><tr><Td><span>28</span></td><Td>29</td><td>30</td><td>31</td></tr>
+	</tbody>
+	</table>
+	</div><br><br>
+	
+
+	<div>
+        <table>
+        <caption>2월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><tr></tr><td><span>4</span></td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td><span>11</span></td><Td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><Td>17</td></tr><tr><td><span>18</span></td><Td>19</td><td>20</td><td>21</td><Td>22</td><td>23</td><Td>24</td></tr><tr><Td><span>25</span></td><Td>26</td><Td>27</td><Td>28</td></tr>
+        </tbody>
+        </table>
+        </div>
+	<br><br>
+
+	<div>
+        <table>
+        <caption>3월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><tr></tr><td><span>4</span></td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td><span>11</span></td><Td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><Td>17</td></tr><tr><td><span>18</span></td><Td>19</td><td>20</td><td>21</td><Td>22</td><td>23</td><Td>24</td></tr><tr><Td><span>25</span></td><Td>26</td><Td>27</td><Td>28</td><td>29</td><td>30</td><td>31</td></tr>
+	</tbody>
+        </table>
+        </div>
+	<br><Br>
+
+	<div>
+        <table>
+        <caption>4월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td><span>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td><span>8</span></td><td>9</td><td>10</td><td>11</td><Td>12</td><td>13</td><td>14</td></tr><tr><td><span>15</span></td><td>16</td><Td>17</td><td>18</td><Td>19</td><td>20</td><td>21</td></tr><Tr><Td><span>22</span></td><td>23</td><Td>24</td><Td>25</td><Td>26</td><Td>27</td><Td>28</td></tr><tr><Td><span>29</td><td>30</td></tr>
+        </tbody>
+        </table>
+        </div><br><br>
+
+
+	<div>
+        <table>
+        <caption>5월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td><span>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><Td>12</td></tr><tr><td><span>13</td><td>14</td><td>15</td><td>16</td><Td>17</td><td>18</td><Td>19</td></tr><tr><td><span>20</td><td>21</td><Td>22</td><td>23</td><Td>24</td><Td>25</td><Td>26</td></tr><Tr><Td><span>27</td><Td>28</td><Td>29</td><td>30</td><td>31</td></tr>
+        </tbody>
+        </table>
+        </div><br><br>
+	
+	<div>
+        <table>
+        <caption>6월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td></tr><tr><td><span>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td><span>10</td><td>11</td><Td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><Td><span>17</td><td>18</td><Td>19</td><td>20</td><td>21</td><Td>22</td><td>23</td></tr><tr><Td><span>24</td><Td>25</td><Td>26</td><Td>27</td><Td>28</td><Td>29</td><td>30</td></tr>
+        </tbody>
+        </table>
+        </div><br><br>
+
+
+	<div>
+        <table>
+        <caption>7월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td><span>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td><span>8</span></td><td>9</td><td>10</td><td>11</td><Td>12</td><td>13</td><td>14</td></tr><tr><td><span>15</span></td><td>16</td><Td>17</td><td>18</td><Td>19</td><td>20</td><td>21</td></tr><Tr><Td><span>22</span></td><td>23</td><Td>24</td><Td>25</td><Td>26</td><Td>27</td><Td>28</td></tr><tr><Td><span>29</td><td>30</td><td>31</td></tr>
+        </tbody>
+        </table>
+        </div><br><br>
+	
+	<div>
+        <table>
+        <caption>8월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td><span>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><Td><span>12</td><td>13</td><td>14</td><td>15</td><td>16</td><Td>17</td><td>18</td></tr><tr><Td><span>19</td><td>20</td><td>21</td><Td>22</td><td>23</td><Td>24</td><Td>25</td></tr><tr><Td><span>26</td><Td>27</td><Td>28</td><td>29</td><td>30</td><td>31</td></tr>
+        </tbody>
+        </table>
+        </div>
+        <br><Br>
+
+	<div>
+        <table>
+        <caption>9월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td><span>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td><span>9</td><td>10</td><td>11</td><Td>12</td><td>13</td><td>14</td><td>15</td></tr><Tr><td><span>16</td><Td>17</td><td>18</td><Td>19</td><td>20</td><td>21</td><Td>22</td></tr><tr><td><span>23</td><Td>24</td><Td>25</td><Td>26</td><Td>27</td><Td>28</td><Td>29</td></tr><tr><td><span>30</td></tr>
+        </tbody>
+        </table>
+        </div><br><br>
+
+	<div>
+        <table>
+        <caption>10월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td><span>7</span></td><td>8</td><td>9</td><td>10</td><td>11</td><Td>12</td><td>13</td></tr><tr><td><span>14</span></td><td>15</td><td>16</td><Td>17</td><td>18</td><Td>19</td><td>20</td></tr><tr><td><span>21</span></td><Td>22</td><td>23</td><Td>24</td><Td>25</td><Td>26</td><Td>27</td></tr><tr><Td><span>28</span></td><Td>29</td><td>30</td><td>31</td></tr>
+        </tbody>
+        </table>
+        </div><br><br>
+
+	<div>
+        <table>
+        <caption>11월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><tr></tr><td><span>4</span></td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td><span>11</span></td><Td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><Td>17</td></tr><tr><td><span>18</span></td><Td>19</td><td>20</td><td>21</td><Td>22</td><td>23</td><Td>24</td></tr><tr><Td><span>25</span></td><Td>26</td><Td>27</td><Td>28</td><td>29</td><td>30</td></tr>
+        </tbody>
+        </table>
+        </div>
+        <br><br>
+
+	<div>
+	<table>
+        <caption>12월</caption>
+        <thead>
+        <tr><th><span>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+        </thead>
+        <tbody>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td><span>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td><span>9</td><td>10</td><td>11</td><Td>12</td><td>13</td><td>14</td><td>15</td></tr><Tr><td><span>16</td><Td>17</td><td>18</td><Td>19</td><td>20</td><td>21</td><Td>22</td></tr><tr><td><span>23</td><Td>24</td><Td>25</td><Td>26</td><Td>27</td><Td>28</td><Td>29</td></tr><tr><td><span>30</td><td>31</td></tr>
+        </tbody>
+        </table>
+        </div><br><br>
+
+	</div>
+    <div class="cal" style="background-color : green; width :60%;">일정내보내기</div>
 </body>
 
 </html>
