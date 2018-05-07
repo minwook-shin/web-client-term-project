@@ -5,106 +5,144 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex">
     <meta name="robots" content="nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/Style.css">
-    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>MAIN</title>
     <style>
-        section div#main-image {
-            position:relative;
-            margin-top:1.3em;
-            display: inline-block;
-            width: 100%;
-            height: 30em;
+        .jumbotron {
+            background: url("image/main-image.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 45em;
         }
-        .backgroundimg {
-            width:100%;
-            height:100%;
+
+        span {
+            color: whitesmoke;
         }
-        .backgroundtext {
-            color: white;
-            font-weight: 600;
-            font-size:5em;
-            position: absolute;
-            bottom: 40%;
-            right: 35%;
+
+
+        body {
+            padding: 20px;
+            background: #fafafa;
+            position: relative;
         }
-        section div#others{
-            width:100%;
-            height:15em;
-            display:inline-block;
-        }
-        
-        section div#notice , div#community{
-            display:inline-block;
-            margin:10px 10px 10px 10px;
-            width:25%;
-            height:15em;
-            background-color:orange; /* notice page*/
-            float:left
-        }
-        section div#community{
-            display:inline-block;
-            background-color:darkblue;
-        }
-        section div#calander {
-            display:inline-block;
-            margin:10px 10px 10px 10px;
-            width:40%;
-            height:15em;
-            background-color:gold;
-            float:left;
-        }
- 
     </style>
+    <script type="text/javascript">
+        if (screen.width <= 699) {
+            document.location = "mobile.html";
+        }
+    </script>
 </head>
 
 <body>
-    <nav>
-        <ul class="full navi">
-            <li class="list">
-                <a class="select active" href="#" >LOGO<h2></h2></a>
-            </li>
-            <li class="list">
-                <a class="select" href="/web-client-term-project/intro/intro-page.html">소개</a>
-            </li>
-            <li class="list">
-                <a class="select" href="/web-client-term-project/notice/notice-page.html">공지</a>
-            </li>
-            <li class="list">
-                <a class="select" href="/web-client-term-project/calender/calender-page.html">일정</a>
-            </li>
-            <li class="list">
-                <a class="select" href="/web-client-term-project/login/member.html">로그인</a>
-            </li>
-            <li style="margin: 10px 60px 0px 0px;float:right">
-                <button class="aqua circle button">Button</button>
-            </li>
-            <li style="margin: 12px 10px 0px 0px;float:right">
-                <input class="short circle input" type="text" placeholder="Enter your text" style="width:10em">
-            </li>
-        </ul>
+    <nav class="navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/web-client-term-project/index.html">
+                    <img alt="KMU CS" src="">
+                </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/web-client-term-project/intro/intro-page.html">학부 소개</a>
+                </li>
+                <li>
+                    <a href="/web-client-term-project/notice/notice-page.html">공지사항</a>
+                </li>
+                <li>
+                    <a href="/web-client-term-project/calender/calender-page.html">일정</a>
+                </li>
+                <li>
+                    <a href="/web-client-term-project/login/member.html">로그인</a>
+                </li>
+
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="키워드를 입력해주세요.">
+                </div>
+                <button type="submit" class="btn btn-default">검색하기</button>
+            </form>
+        </div>
     </nav>
-    <section>
-        <div id="main-image">
-            <img src="image/main-image.jpg" alt="메인이미지" class="backgroundimg"/>
-            <div class="backgroundtext">
-                Kookmin <br />
-                Software
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <span>
+                <h1>
+                    <br>&nbsp; &nbsp; KOOKMIN .UNIV
+                    <BR>&nbsp; &nbsp; Computer Science</h1>
+            </span>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">학부 소개</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    소프트웨어 융합대학은 오픈소스 소프트웨어 교육을 기반으로 글로벌 경쟁력을 갖춘 소프트웨어 전문 인력을 양성하기 위한 교육 목표에 따라...
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        더 알아보기
+                    </a>
+                </div>
+                <div class="mdl-card__menu">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">share</i>
+                    </button>
+                </div>
             </div>
         </div>
-        <div id="others">
-            <div id="notice">
-                <h3>공지</h3>
-            </div>
-            <div id="community">
-                <h3>커뮤니티</h3>
-            </div>
-            <div id="calander">
-                <h3>학사 일정</h3>
+        <div class="col-lg-4">
+            <div class="mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <h2 class="mdl-card__title-text">공지 사항</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <br> 학부에서의 중요한 소식들을 다루는 공간입니다.
+                    <br>
+                    <br>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        이동하기
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
+
+        <div class="col-lg-4">
+            <div class="demo-card-event mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <h4>
+                        다음 학사일정 일시:
+                        <br> 2018년 7월 7일
+                        <br> 7-11pm
+                    </h4>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">event</i> 달력 보러가기
+                    </a>
+                    <div class="mdl-layout-spacer"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>

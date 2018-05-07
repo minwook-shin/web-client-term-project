@@ -17,18 +17,9 @@
 
     <title>MEMBER</title>
     <style>
-        .user-account {
-            background-color:aliceblue;
-            width: 360px;
-            padding: 1% 0 1%;
-            margin-top: 25em;
-        }
-        body{
-            background:"main-image.jpg";
-            background-size:cover;                
-            background-repeat:no-repeat;
-            background-position:center center;
-        }
+        html, body{ margin:0; padding:0; height:100%;}
+        .header{width:100%; height:300px; float:left; background:blueviolet;}
+        .section{width:100%; height:700px; float:left; background:aqua;}
     </style>
 </head>
 
@@ -51,46 +42,22 @@
                     <li>
                         <a href="/web-client-term-project/calender/calender-page.html">일정</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/web-client-term-project/login/member.html">로그인</a>
+                    </li>
+                    <li class="active">
+                        <a href="/web-client-term-project/login/search.html">검색</a>
                     </li>
 
                 </ul>
-
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="키워드를 입력해주세요.">
-                    </div>
-                    <button type="submit" class="btn btn-default">검색하기</button>
-                </form>
             </div>
         </nav>
-        <form action="/login.php" method="POST">
-        <div class="user-account">
-            <ul style="list-style:none">
-                <p>
-                    <li style="list-style:none">
-                        <strong>학번 / 사번 : </strong>
-                        <span>
-                            <input class="half round input" type="text" name="school_num" />
-                        </span>
-                    </li>
-                </p>
-                <p>
-                    <li style="list-style:none">
-                        <strong>비 밀 번 호 : </strong>
-                        <span>
-                            <input class="half round input" type="password" name="pw" />
-                        </span>
-                    </li>
-                </p>
-            </ul>
-            <div class="login-sumbit">
-                <button class="yellow circle button" type="submit">로그인</button>
-            </div>
-        </div>
-        </form>
+        <header class="header">
+            <p>검색한 단어:"---"</p>
+        </header>
+        <section class="section">
+            <p>검색 내용 출력</p>
+        </section>
     </center>
 </body>
-
 </html>

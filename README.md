@@ -15,6 +15,14 @@ Caution: This repository is private, but the published site will be public.
 
 * [Navigator Part](https://minwook-shin.github.io/web-client-term-project/css/navi_test.html)
 
+* [NEW Navigator Version 2 Part](https://minwook-shin.github.io/web-client-term-project/css/navi_test_2.html)
+
+## Available Frameworks
+
+https://getmdl.io/components/index.html
+
+http://bootstrapk.com/components/
+
 ## Development
 
 * Standard Style code.
