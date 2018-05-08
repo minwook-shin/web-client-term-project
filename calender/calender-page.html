@@ -15,20 +15,25 @@
     <title>CALENDER</title>
     <html>
     <style>
+	body{
+		padding :300px;
+		position : relative;
+	}
         .cal {
             padding-left: 300px white;
             display: inline-block;
-            height:100%;
             width: 30%;
             margin-top: 3.5em
         }
 	table{
+		border : 1px solid #f79f81; 
 		background-color:beige; 
 		text-align : center; 
-		
+		width : 70%;	
+		height : 250px;
 		margin :auto;
 	}
-	caption{background-color : beige;}
+	caption{text-align : center;}
 	span { color : red;}
     </style>
 </head>
@@ -65,7 +70,7 @@
             </form>
         </div>
     </nav>
-    <div class="cal" style="background-color : orange;">calendar
+    <div class="cal" style = "text-align :center;">2018
 	<div>
 	<table>
 	<caption>1월</caption>
@@ -219,8 +224,6 @@
 
 	</div>
     <div class="cal" style="background-color : green; width :60%;">일정내보내기</div>
-    <div class="cal" style="background-color : orange;">calendar</div>
-    <div class="cal" style="background-color : green; width : 1000px;">일정내보내기</div>
 </body>
 
 </html>
