@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="main-calander.js" charset="utf-8"></script>
     <title>MAIN</title>
     <style>
         .jumbotron {
@@ -32,6 +33,7 @@
             padding: 20px;
             background: #fafafa;
             position: relative;
+            
         }
     </style>
     <script type="text/javascript">
@@ -64,6 +66,11 @@
                 </li>
 
             </ul>
+            <table>
+                <tr>
+                    <th></th>
+                </tr>
+            </table>
 
             <form class="navbar-form navbar-right" role="search">
                 <div class="form-group">
@@ -125,18 +132,22 @@
         <div class="col-lg-4">
             <div class="demo-card-event mdl-shadow--2dp">
                 <div class="mdl-card__title mdl-card--expand">
-                    <h4>
-                        다음 학사일정 일시:
-                        <br> 2018년 7월 7일
-                        <br> 7-11pm
-                    </h4>
+                    <div style="display:block;padding-bottom:30px">
+                        <div class="calander"></div>
+                        <div class="panel panel-default" style="margin:30px 0px 30px 0px;height:100px;background-color:lightyellow">
+                            <div class="panel-body">
+                                2018년 5월은 일정이 없습니다.
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                         <i class="material-icons">event</i> 달력 보러가기
                     </a>
                     <div class="mdl-layout-spacer"></div>
-
                 </div>
             </div>
         </div>
