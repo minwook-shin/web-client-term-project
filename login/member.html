@@ -18,16 +18,17 @@
     <title>MEMBER</title>
     <style>
         .user-account {
-            background-color:aliceblue;
+            background-color: aliceblue;
             width: 360px;
             padding: 1% 0 1%;
             margin-top: 25em;
         }
-        body{
-            background:"main-image.jpg";
-            background-size:cover;                
-            background-repeat:no-repeat;
-            background-position:center center;
+
+        body {
+            background: "main-image.jpg";
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
     </style>
 </head>
@@ -66,29 +67,29 @@
             </div>
         </nav>
         <form action="/login.php" method="POST">
-        <div class="user-account">
-            <ul style="list-style:none">
-                <p>
-                    <li style="list-style:none">
-                        <strong>학번 / 사번 : </strong>
-                        <span>
-                            <input class="half round input" type="text" name="school_num" />
-                        </span>
-                    </li>
-                </p>
-                <p>
-                    <li style="list-style:none">
-                        <strong>비 밀 번 호 : </strong>
-                        <span>
-                            <input class="half round input" type="password" name="pw" />
-                        </span>
-                    </li>
-                </p>
-            </ul>
-            <div class="login-sumbit">
-                <button class="yellow circle button" type="submit">로그인</button>
+            <div class="user-account">
+                <ul style="list-style:none">
+                    <p>
+                        <li style="list-style:none">
+                            <strong>학번 / 사번 : </strong>
+                            <span>
+                                <input class="half round input" type="text" name="school_num" />
+                            </span>
+                        </li>
+                    </p>
+                    <p>
+                        <li style="list-style:none">
+                            <strong>비 밀 번 호 : </strong>
+                            <span>
+                                <input class="half round input" type="password" name="pw" />
+                            </span>
+                        </li>
+                    </p>
+                </ul>
+                <div class="login-sumbit">
+                    <button class="yellow circle button" type="submit">로그인</button>
+                </div>
             </div>
-        </div>
         </form>
     </center>
 </body>

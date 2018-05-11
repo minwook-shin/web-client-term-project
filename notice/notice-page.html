@@ -16,77 +16,178 @@
 </head>
 
 <body>
-        <nav class="navbar-fixed-top navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="/web-client-term-project/index.html">
-                            <img alt="KMU CS" src="">
-                        </a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/web-client-term-project/intro/intro-page.html">학부 소개</a>
-                        </li>
-                        <li class="active">
-                            <a href="/web-client-term-project/notice/notice-page.html">공지사항</a>
-                        </li>
-                        <li>
-                            <a href="/web-client-term-project/calender/calender-page.html">일정</a>
-                        </li>
-                        <li>
-                            <a href="/web-client-term-project/login/member.html">로그인</a>
-                        </li>
-        
-                    </ul>
-        
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="키워드를 입력해주세요.">
-                        </div>
-                        <button type="submit" class="btn btn-default">검색하기</button>
-                    </form>
+    <nav class="navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/web-client-term-project/index.html">
+                    <img alt="KMU CS" src="">
+                </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/web-client-term-project/intro/intro-page.html">학부 소개</a>
+                </li>
+                <li class="active">
+                    <a href="/web-client-term-project/notice/notice-page.html">공지사항</a>
+                </li>
+                <li>
+                    <a href="/web-client-term-project/calender/calender-page.html">일정</a>
+                </li>
+                <li>
+                    <a href="/web-client-term-project/login/member.html">로그인</a>
+                </li>
+
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="키워드를 입력해주세요.">
                 </div>
-            </nav>
+                <button type="submit" class="btn btn-default">검색하기</button>
+            </form>
+        </div>
+    </nav>
     <section style="margin-top: 4em">
         <table class="table">
             <thead>
-            <tr>
-                <th>번호</th><th>제목</th><th>글쓴이</th><th>작성일</th><th>조회수</th><th>첨부</th>
-            </tr>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                    <th>첨부</th>
+                </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>notice</td><td>(05/18) 2018-1 일반대학원 설명회</td><td>이지영</td><td>18.05.02</td><td>91</td><td></td>
-            </tr>
-            <tr>
-                <td>notice</td><td>2018학년도 하계 SGE 프로그램 신청 안내</td><td>강예진</td><td>18.04.30</td><td>132</td><td></td>
-            </tr>
-            <tr>
-                <td>notice</td><td>2018 글쓰기 프로그램<큐레이션 리딩 : 이공계 학생…</td><td>강예진</td><td>18.04.27</td><td>81</td><td></td>
-            </tr>
-            <tr>
-                <td>notice</td><td>자동차공학전문대학원 진학설명회 안내</td><td>강예진</td><td>18.04.25</td><td>32</td><td></td>
-            </tr>
-            <tr>
-                <td>notice</td><td>[사전신청] 2018 IITP Tech & Future Insight Spring</td><td>강지혜</td><td>18.04.25</td><td>168</td><td></td>
-            </tr>
-            <tr>
-                <td>notice</td><td>2018 국민 공학 Festa 참가 안내</td><td>안성하</td><td>18.04.23</td><td>225</td><td></td>
-            </tr>
-            <tr>
-                <td>2159</td><td>(~5/18) NET 챌린지 캠프 SEASON5</td><td>강예진</td><td>18.05.04</td><td>55</td><td></td>
-            </tr>
-            <tr>
-                <td>2157</td><td>(~05/09)[동우화인켐㈜] 2018년 상반기 신입,경력사…</td><td>이지영</td><td>18.05.03</td><td>21</td><td></td>
-            </tr>
-            <tr>
-                <td>2156</td><td>(~10/31) 2018 청년관광 아이디어 공모전</td><td>강예진</td><td>18.05.03</td><td>33</td><td></td>
-            </tr>
-            <tr>
-                <td>2153</td><td>2018 정보보호 해커톤 설명회</td><td>강예진</td><td>18.04.27</td><td>135</td><td></td>
-            </tr>
+                <tr>
+                    <td>
+                        <span class="label label-info">notice</span>
+                    </td>
+                    <td>05/18) 2018-1 일반대학원 설명회
+                        <span class="badge">0</span>
+                    </td>
+                    <td>이지영</td>
+                    <td>18.05.02</td>
+                    <td>91</td>
+                    <td><span class="mdl-badge" data-badge="13">설명회_자료.pdf</span></td>
+                </tr>
+                <tr>
+                    <td><span class="label label-info">notice</span></td>
+                    <td>2018학년도 하계 SGE 프로그램 신청 안내
+                        <span class="badge">0</span>
+                    </td>
+                    <td>강예진</td>
+                    <td>18.04.30</td>
+                    <td>132</td>
+                    <td><span class="mdl-badge" data-badge="21">프로그램_신청서.docx</span></td>
+                </tr>
+                <tr>
+                    <td><span class="label label-info">notice</span></td>
+                    <td>2018 글쓰기 프로그램
+                        <큐레이션 리딩 : 이공계 학생… <span class="badge">0</span>
+                    </td>
+                    <td>강예진</td>
+                    <td>18.04.27</td>
+                    <td>81</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="label label-info">notice</span></td>
+                    <td>자동차공학전문대학원 진학설명회 안내
+                        <span class="badge">0</span>
+                    </td>
+                    <td>강예진</td>
+                    <td>18.04.25</td>
+                    <td>32</td>
+                    <td><span class="mdl-badge" data-badge="32">대학원_신청서.docx</span></td>
+                </tr>
+                <tr>
+                    <td><span class="label label-info">notice</span></td>
+                    <td>[사전신청] 2018 IITP Tech & Future Insight Spring
+                        <span class="badge">0</span>
+                    </td>
+                    <td>강지혜</td>
+                    <td>18.04.25</td>
+                    <td>168</td>
+                    <td><span class="mdl-badge" data-badge="42">프로그램_신청서.docx</span></td>
+                </tr>
+                <tr>
+                    <td><span class="label label-info">notice</span></td>
+                    <td>2018 국민 공학 Festa 참가 안내
+                        <span class="badge">0</span>
+                    </td>
+                    <td>안성하</td>
+                    <td>18.04.23</td>
+                    <td>225</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2159</td>
+                    <td>(~5/18) NET 챌린지 캠프 SEASON5
+                        <span class="badge">0</span>
+                    </td>
+                    <td>강예진</td>
+                    <td>18.05.04</td>
+                    <td>55</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2157</td>
+                    <td>(~05/09)[동우화인켐㈜] 2018년 상반기 신입,경력사…
+                        <span class="badge">0</span>
+                    </td>
+                    <td>이지영</td>
+                    <td>18.05.03</td>
+                    <td>21</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2156</td>
+                    <td>(~10/31) 2018 청년관광 아이디어 공모전
+                        <span class="badge">0</span>
+                    </td>
+                    <td>강예진</td>
+                    <td>18.05.03</td>
+                    <td>33</td>
+                    <td><span class="mdl-badge" data-badge="12">공모전_안내.hwp</span></td>
+                </tr>
+                <tr>
+                    <td>2153</td>
+                    <td>2018 정보보호 해커톤 설명회
+                        <span class="badge">0</span>
+                    </td>
+                    <td>강예진</td>
+                    <td>18.04.27</td>
+                    <td>135</td>
+                    <td></td>
+                </tr>
             </tbody>
         </table>
+        <nav style="text-align:center">
+            <ul class="pagination">
+                <li class="disabled">
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">1
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">2
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </section>
 </body>
 
