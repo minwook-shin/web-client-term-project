@@ -35,6 +35,29 @@
             position: relative;
             
         }
+        #notice {
+            width:700px;
+        }
+        #intro{
+            width:700px;
+        }
+        #date{
+            width:400px
+        }
+        #next{
+            color:blue;
+            padding:5px 5px 5px 5px;
+            margin-right:10px;
+            text-decoration: none;
+            font-size:20px;
+        }
+        #more{
+            width:30px;
+            height:30px;
+        }
+        #tabledate{
+            float:right;
+        }
     </style>
     <script type="text/javascript">
         if (screen.width <= 699) {
@@ -82,73 +105,79 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" style="width:1150px">
 
         <div class="jumbotron">
             <span>
                 <h1>
                     <br>&nbsp; &nbsp; KOOKMIN .UNIV
-                    <BR>&nbsp; &nbsp; Computer Science</h1>
+                    <BR>&nbsp; &nbsp; Computer Science
+                </h1>
             </span>
         </div>
 
-        <div class="col-lg-4">
-            <div class="mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">학부 소개</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    소프트웨어 융합대학은 오픈소스 소프트웨어 교육을 기반으로 글로벌 경쟁력을 갖춘 소프트웨어 전문 인력을 양성하기 위한 교육 목표에 따라...
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        더 알아보기
-                    </a>
-                </div>
-                <div class="mdl-card__menu">
-                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class="material-icons">share</i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="mdl-shadow--2dp">
-                <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="mdl-card__title-text">공지 사항</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    <br> 학부에서의 중요한 소식들을 다루는 공간입니다.
-                    <br>
-                    <br>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        이동하기
-                    </a>
-                </div>
-            </div>
-        </div>
+        <div id="lside" style="float:left;width:700px;">
+            <div id="notice" class="col-lg-4">
+                <div class="mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">공지 사항 </h2>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <div class="mdl-card__supporting-text">
+                            <table>
+                                <tr>
 
-        <div class="col-lg-4">
-            <div class="demo-card-event mdl-shadow--2dp">
-                <div class="mdl-card__title mdl-card--expand">
-                    <div style="display:block;padding-bottom:30px">
-                        <div class="calander"></div>
-                        <div class="panel panel-default" style="margin:30px 0px 30px 0px;height:100px;background-color:lightyellow">
-                            <div class="panel-body">
-                                2018년 5월은 일정이 없습니다.
-                            </div>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-
-
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        <i class="material-icons">event</i> 달력 보러가기
-                    </a>
-                    <div class="mdl-layout-spacer"></div>
+                <div class="mdl-card__menu">
+                    <a href="notice/notice-page.html"><img src="image/more.png" id="more" /></a>
+                </div>
+            </div>
+            <div id="intro" class="col-lg-4">
+                <div class="mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">학부 소개</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        소프트웨어 융합대학은 오픈소스 소프트웨어 교육을 기반으로 글로벌 경쟁력을 갖춘 소프트웨어 전문 인력을 양성하기 위한 교육 목표에 따라...
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            더 알아보기
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">share</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rside" style="float:left;width:400px">
+            <div id="date" class="col-lg-4">
+                <div class="demo-card-event mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <div style="display:block;padding-bottom:30px">
+                            <div class="calander"></div>
+                            <div class="panel panel-default" style="margin:30px 0px 30px 0px;height:100px;background-color:lightyellow">
+                                <div class="panel-body">
+                                    2018년 5월은 일정이 없습니다.
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">event</i> 달력 보러가기
+                        </a>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
                 </div>
             </div>
         </div>
