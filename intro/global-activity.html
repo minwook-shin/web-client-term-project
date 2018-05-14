@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="intro-Style.css">
+    <script type="text/javascript" src="../login/search.js" charset="utf-8"></script>
     <title>Global-activity</title>
 </head>
 
@@ -40,11 +41,12 @@
 
             </ul>
 
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="키워드를 입력해주세요.">
+
+            <form class="navbar-form navbar-right" role="search" name="form">
+                <div class="form-group" name="div">
+                    <input type="text" class="form-control" placeholder="키워드를 입력해주세요." name="text">
                 </div>
-                <button type="submit" class="btn btn-default">검색하기</button>
+                <button type="button" class="btn btn-default" onclick="search()">검색하기</button>
             </form>
         </div>
     </nav>
@@ -63,44 +65,51 @@
         </nav>
 
         <section id="content">
-            <h3>국제교류활동</h3>
-            <p>
-                소프트웨어융합대학은 글로벌 역량을 갖춘 창의적인 인재 양성을 위해 다양한 국제교류활동을 지원하고 있습니다.
-            </p>
-            <h5 class="paragraph">글로벌 교육 프로그램 (KMU-UCI I-SURF Program)</h5>
-            <hr />
-            <p>
-                <ul>
-                    <li>매년 여름 6월말부터 10주간 University of California at Irvine의 현지 지도 교수, 현지 대학원생 멘토와 함께 공동 연구를 수행하고 Technical Communication, Advanced Technology Seminar 등의 수업을 수강</li>
-                    <li>장기 현장 교육 및 인턴십: 10개월의 장기 현장 교육 및 현지 기업을 통한 Practical Training</li>
-                    <li>KMU-UCI Global SW Expert Program 을 통해서 글로벌 교육 프로그램 참가자중 우수학생을 선발하여 현지 연구소에서 연구원 인턴 수행</li>
-                </ul>
-            </p>
-            <div style="width:100%;height:10%;">
-                <img src="image/activity_img2-1.jpg" style="width:35%;height:10%" />
-                <img src="image/activity_img2-2.jpg" style="width:64%;height:10%" />
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">국제교류활동</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        소프트웨어융합대학은 글로벌 역량을 갖춘 창의적인 인재 양성을 위해 다양한 국제교류활동을 지원하고 있습니다.
+                    </p>
+                    <h5 class="paragraph">글로벌 교육 프로그램 (KMU-UCI I-SURF Program)</h5>
+                    <hr />
+                    <p>
+                        <ul>
+                            <li>매년 여름 6월말부터 10주간 University of California at Irvine의 현지 지도 교수, 현지 대학원생 멘토와 함께 공동 연구를 수행하고 Technical
+                                Communication, Advanced Technology Seminar 등의 수업을 수강</li>
+                            <li>장기 현장 교육 및 인턴십: 10개월의 장기 현장 교육 및 현지 기업을 통한 Practical Training</li>
+                            <li>KMU-UCI Global SW Expert Program 을 통해서 글로벌 교육 프로그램 참가자중 우수학생을 선발하여 현지 연구소에서 연구원 인턴 수행</li>
+                        </ul>
+                    </p>
+                    <div style="width:100%;height:10%;">
+                        <img src="image/activity_img2-1.jpg" style="width:35%;height:10%" />
+                        <img src="image/activity_img2-2.jpg" style="width:64%;height:10%" />
+                    </div>
+                    <h5 class="paragraph">실리콘밸리 인턴쉽</h5>
+                    <hr /> &bull; 2013년 이후 실리콘밸리 현지 기업내 소프트웨어 개발 직종에서 20여명 이상 인턴쉽 실시
+                    <div style="width:100%;height:7%;">
+                        <img src="image/activity_img3.jpg" style="width:45%;margin-top:10px" />
+                        <img src="image/activity_img4.jpg" style="width:49.8%;margin-top:10px" />
+                    </div>
+                    <h5 class="paragraph">국민대학교 실리콘 밸리 지원센터 운영 및 현지 리쿠르팅 전문가 확보</h5>
+                    <hr />
+                    <h5 class="paragraph">다양한 분야에서 해외 대학과의 공동 연구 프로젝트 수행</h5>
+                    <hr />
+                    <img src="image/activity_img1.gif" style="width:100%" />
+                    <h5 class="paragraph">해외 유명 개발자 컨퍼런스 참석지원</h5>
+                    <hr /> &bull; Google I/O, O’reilly OSCON, WWDC, Facebook F8, Linux Summit 등의 해외 유명 Developer Conference 참가
+                    및 관련 기업/대학 탐방 프로그램 운영
+                    <h5 class="paragraph">실리콘 밸리 현지 한인 개발자 , 디자이너, 사업가 초청 컨퍼런스 개최</h5>
+                    <hr />
+                    <img src="image/activity_img5.jpg" style="width:30%" />
+                    <img src="image/activity_img6.jpeg" style="width:50%" />
+                </div>
             </div>
-            <h5 class="paragraph">실리콘밸리 인턴쉽</h5>
-            <hr />
-            &bull; 2013년 이후 실리콘밸리 현지 기업내 소프트웨어 개발 직종에서 20여명 이상 인턴쉽 실시
-            <div style="width:100%;height:7%;">
-                <img src="image/activity_img3.jpg" style="width:45%;margin-top:10px" />
-                <img src="image/activity_img4.jpg" style="width:49.8%;margin-top:10px" />
-            </div>
-            <h5 class="paragraph">국민대학교 실리콘 밸리 지원센터 운영 및 현지 리쿠르팅 전문가 확보</h5>
-            <hr />
-            <h5 class="paragraph">다양한 분야에서 해외 대학과의 공동 연구 프로젝트 수행</h5>
-            <hr />
-            <img src="image/activity_img1.gif" style="width:100%" />
-            <h5 class="paragraph">해외 유명 개발자 컨퍼런스 참석지원</h5>
-            <hr />
-            &bull; Google I/O, O’reilly OSCON, WWDC, Facebook F8, Linux Summit 등의 해외 유명 Developer Conference 참가 및 관련 기업/대학 탐방 프로그램 운영
-            <h5 class="paragraph">실리콘 밸리 현지 한인 개발자 , 디자이너, 사업가 초청 컨퍼런스 개최</h5>
-            <hr />
-            <img src="image/activity_img5.jpg" style="width:30%" />
-            <img src="image/activity_img6.jpeg" style="width:50%" />
+
         </section>
-        </div>
+    </div>
 </body>
 
 </html>

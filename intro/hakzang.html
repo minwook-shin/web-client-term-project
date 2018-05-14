@@ -13,19 +13,22 @@
     <link rel="stylesheet" href="../css/material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="intro-Style.css">
+    <script type="text/javascript" src="../login/search.js" charset="utf-8"></script>
     <title>INTRO</title>
     <style>
-        .left{
-            width:200px;
+        .left {
+            width: 200px;
         }
-        .right{
-            float:left;
-            width:50%;
-            margin-left:5%;
+
+        .right {
+            float: left;
+            width: 50%;
+            margin-left: 5%;
         }
+
         span {
             color: deepskyblue;
-            font-size:1.2em;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -54,11 +57,12 @@
 
             </ul>
 
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="키워드를 입력해주세요.">
+
+            <form class="navbar-form navbar-right" role="search" name="form">
+                <div class="form-group" name="div">
+                    <input type="text" class="form-control" placeholder="키워드를 입력해주세요." name="text">
                 </div>
-                <button type="submit" class="btn btn-default">검색하기</button>
+                <button type="button" class="btn btn-default" onclick="search()">검색하기</button>
             </form>
         </div>
     </nav>
@@ -80,39 +84,32 @@
             <h3>학장 인사말</h3>
             <div class="fullwidth">
                 <div class="left">
-                    <img src="image/hakzang.jpg"><br />
+                    <img src="image/hakzang.jpg">
+                    <br />
                     <strong> 소프트웨어융합대학장</strong>
                     <img src="image/hakzang-sign.gif">
                 </div>
                 <div class="right">
                     <h3 class="introduce">
-                        <span>소프트웨어</span>를 통해 <br />학생들의 꿈과 사회의 꿈을 실현하는<br />
+                        <span>소프트웨어</span>를 통해
+                        <br />학생들의 꿈과 사회의 꿈을 실현하는
+                        <br />
                         <span>최고의 교육 환경</span>을 만들겠습니다.
                     </h3>
                 </div>
             </div>
             <div>
                 <hr />
-                <h4>인간이 발명한 것들 중 가장 크고 광범위한 영향력을 가진 결과물인 소프트웨어가 
-                세상을 먹어치우는 시대를 맞이하고 있습니다.</h4>
+                <h4>인간이 발명한 것들 중 가장 크고 광범위한 영향력을 가진 결과물인 소프트웨어가 세상을 먹어치우는 시대를 맞이하고 있습니다.</h4>
                 <p>
-                    그만큼 우리 주변의 모든 분야에서 소프트웨어를 활용한 
-                    큰 성공 사례를 많이 확인할 수 있습니다. 국민대학교 소프트웨어 
-                    융합대학에서는 소프트웨어 분야의 역량을 가지고 학생들 각자 
-                    자신의 꿈을 이루기 위한 인생 여정을 즐길 확실한 준비를 하게 됩니다. 
-                    각자의 꿈은 국내에서 뿐 아니라 전 세계 어디에서나 실현될 수 있으며, 
-                    소프트웨어는 그럴 수 있는 가장 좋은 도구입니다. 국민대학교 
-                    소프트웨어융합대학에서는 실리콘밸리 인턴 프로그램을 통해 학생들이
-                    소프트웨어 분야의 메이저리그에서 혁신의 현장을 체험하는 기회를 제공합니다.
-                    일부 학생들은 이미 정규직으로 진출해서 활약중입니다.
+                    그만큼 우리 주변의 모든 분야에서 소프트웨어를 활용한 큰 성공 사례를 많이 확인할 수 있습니다. 국민대학교 소프트웨어 융합대학에서는 소프트웨어 분야의 역량을 가지고 학생들 각자 자신의 꿈을 이루기 위한 인생 여정을 즐길
+                    확실한 준비를 하게 됩니다. 각자의 꿈은 국내에서 뿐 아니라 전 세계 어디에서나 실현될 수 있으며, 소프트웨어는 그럴 수 있는 가장 좋은 도구입니다. 국민대학교 소프트웨어융합대학에서는
+                    실리콘밸리 인턴 프로그램을 통해 학생들이 소프트웨어 분야의 메이저리그에서 혁신의 현장을 체험하는 기회를 제공합니다. 일부 학생들은 이미 정규직으로 진출해서 활약중입니다.
                 </p>
 
                 <p>
-                    곧 만나게 될 세상은 각 개인이 세상의 문제를 해결할 어떤 역량을 갖추고
-                    있는지가 더 중요한 세상입니다. 국민대학교 소프트웨어융합대학은 학생들이 
-                    각자의 분야에서 자신의 꿈을 이루어가는 데 소프트웨어를 최대한 활용할 수 
-                    있는 역량을 체험적으로 습득할 수 있는 최고의 교육 무대를 만들고 있습니다. 
-                    저희 모든 교직원들의 꿈은 학생들의 꿈, 우리 사회의 꿈과 함께 합니다.
+                    곧 만나게 될 세상은 각 개인이 세상의 문제를 해결할 어떤 역량을 갖추고 있는지가 더 중요한 세상입니다. 국민대학교 소프트웨어융합대학은 학생들이 각자의 분야에서 자신의 꿈을 이루어가는 데 소프트웨어를 최대한 활용할 수
+                    있는 역량을 체험적으로 습득할 수 있는 최고의 교육 무대를 만들고 있습니다. 저희 모든 교직원들의 꿈은 학생들의 꿈, 우리 사회의 꿈과 함께 합니다.
                 </p>
             </div>
         </section>
