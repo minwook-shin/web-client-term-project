@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /**
 * Web client term project CSS file
 * @author minwook-shin
@@ -8,17 +7,15 @@
 /* Nanum font */
 
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+/* Default code - Remove padding and margin */
 
-
-
-/* Default code - Remove padding and margin */ 
-body { 
-    margin-top: 50px; 
+body {
+    margin-top: 50px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    padding: 0; 
-    border: 0; 
+    padding: 0;
+    border: 0;
     font-family: 'Nanum Gothic', sans-serif;
     background-color: whitesmoke;
 }
@@ -33,79 +30,79 @@ body {
     text-align: center;
 }
 
-/* Default code - Set position */ 
+/* Default code - Set position */
 
-.clear { 
-    clear:both; 
-} 
+.clear {
+    clear: both;
+}
 
-.right { 
-    float: right; 
-} 
+.right {
+    float: right;
+}
 
-.left { 
-    float: left; 
+.left {
+    float: left;
 }
 
 /* Color */
 
-.black{
+.black {
     background-color: black;
     color: white;
     border: 10px soild black;
 }
 
-.white{
+.white {
     background-color: white;
     color: black;
 }
 
-.red{
+.red {
     background-color: red;
     color: white;
 }
 
-.orange{
+.orange {
     background-color: orange;
     color: white;
 }
 
-.yellow{
+.yellow {
     background-color: yellow;
     color: black;
 }
 
-.green{
+.green {
     background-color: green;
     color: white;
 }
 
-.blue{
+.blue {
     background-color: blue;
     color: white;
 }
 
-.indigo{
+.indigo {
     background-color: indigo;
     color: white;
 }
 
-.purple{
+.purple {
     background-color: purple;
     color: white;
 }
 
-.aqua{
+.aqua {
     background-color: aqua;
     color: black;
 }
 
-.pink{
+.pink {
     background-color: pink;
     color: black;
 }
 
-.gray{
+.gray {
     background-color: gray;
     color: white;
 }
@@ -120,15 +117,15 @@ body {
     cursor: pointer;
 }
 
-.round{
+.round {
     border-radius: 10px;
 }
 
-.circle{
+.circle {
     border-radius: 2em;
 }
 
-.border{
+.border {
     border: 10px soild black;
 }
 
@@ -138,32 +135,31 @@ body {
     width: 100%;
 }
 
-.half{
+.half {
     width: 45%;
 }
 
-.short{
+.short {
     width: 20%;
 }
 
-.input{
+.input {
     padding: 5px 15px 5px 15px;
     display: inline-block;
     border: 1px solid black;
     background-color: whitesmoke;
 }
 
-.input:focus{
+.input:focus {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-color: lightgray;
     border: 1px solid #555;
 }
 
-
 /* Navigation bar */
 
-.navi{
+.navi {
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
