@@ -40,16 +40,22 @@
 
             </ul>
 
+<<<<<<< HEAD
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="제목,글쓴이,내용 검색">
+=======
             <form class="navbar-form navbar-right" role="search" name="form">
                 <div class="form-group" name="div">
                     <input type="text" class="form-control" placeholder="키워드를 입력해주세요." name="text">
+>>>>>>> d0207b4bb7928236f456a084cf74e0d61662706e
                 </div>
                 <button type="button" class="btn btn-default" onclick="search()">검색하기</button>
             </form>
         </div>
     </nav>
     <section style="margin-top: 4em">
-        <table class="table">
+        <table class="table-hover">
             <thead>
                 <tr>
                     <th>번호</th>
@@ -81,7 +87,11 @@
                     <td>강예진</td>
                     <td>18.04.30</td>
                     <td>132</td>
-                    <td><span class="mdl-badge" data-badge="21">프로그램_신청서.docx</span></td>
+                    <td>
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="label label-info">notice</span></td>
@@ -91,7 +101,11 @@
                     <td>강예진</td>
                     <td>18.04.27</td>
                     <td>81</td>
-                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="label label-info">notice</span></td>
@@ -121,7 +135,11 @@
                     <td>안성하</td>
                     <td>18.04.23</td>
                     <td>225</td>
-                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td>2159</td>
@@ -165,6 +183,7 @@
                 </tr>
             </tbody>
         </table>
+        <hr>
         <nav style="text-align:center">
             <ul class="pagination">
                 <li class="disabled">
@@ -179,6 +198,21 @@
                 </li>
                 <li>
                     <a href="#">2
+                    
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>3
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">4
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">5
 
                     </a>
                 </li>
@@ -189,6 +223,22 @@
                 </li>
             </ul>
         </nav>
+        <form class="form-inline" style="text-align: center">
+            <div class="form-group">
+                <select class="form-control">
+                    <option>전체</option>
+                    <option>제목</option>
+                    <option>내용</option>
+                  </select>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="제목, 글쓴이, 내용 검색">
+            </div>
+            <button type="submit" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+          </form>        
+        <a class="btn btn-default" style="text-align: right">게시판 별 게시물 보존기한 안내 ></a>
     </section>
 </body>
 
