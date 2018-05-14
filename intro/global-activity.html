@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="intro-Style.css">
+    <script type="text/javascript" src="../login/search.js" charset="utf-8"></script>
     <title>Global-activity</title>
 </head>
 
@@ -40,11 +41,12 @@
 
             </ul>
 
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="키워드를 입력해주세요.">
+
+            <form class="navbar-form navbar-right" role="search" name="form">
+                <div class="form-group" name="div">
+                    <input type="text" class="form-control" placeholder="키워드를 입력해주세요." name="text">
                 </div>
-                <button type="submit" class="btn btn-default">검색하기</button>
+                <button type="button" class="btn btn-default" onclick="search()">검색하기</button>
             </form>
         </div>
     </nav>
