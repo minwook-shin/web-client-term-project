@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="../css/material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="../login/search.js" charset="utf-8"></script>
     <title>NOTICE</title>
 </head>
 
@@ -43,7 +44,7 @@
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="제목,글쓴이,내용 검색">
                 </div>
-                <button type="submit" class="btn btn-default">검색하기</button>
+                <button type="button" class="btn btn-default" onclick="search()">검색하기</button>
             </form>
         </div>
     </nav>
@@ -80,7 +81,11 @@
                     <td>강예진</td>
                     <td>18.04.30</td>
                     <td>132</td>
-                    <td><span class="mdl-badge" data-badge="21">프로그램_신청서.docx</span></td>
+                    <td>
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="label label-info">notice</span></td>
@@ -90,7 +95,11 @@
                     <td>강예진</td>
                     <td>18.04.27</td>
                     <td>81</td>
-                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="label label-info">notice</span></td>
@@ -120,7 +129,11 @@
                     <td>안성하</td>
                     <td>18.04.23</td>
                     <td>225</td>
-                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td>2159</td>
