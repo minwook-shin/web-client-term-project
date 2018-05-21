@@ -17,12 +17,26 @@
     <title>MAIN</title>
     <style>
         .jumbotron {
-            background: url("image/main-image.jpg") no-repeat center center fixed;
+            background: url("image/main-image.jpg") no-repeat center center;
+            margin-top:3.5em;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            height: 45em;
+            height: 25em;
+        }
+        .jumbotron #main-text-box{
+            width:800px;
+            height:200px;
+            border:solid white 3px;
+            padding-left:50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:white;
+            margin-left:100px;
+            margin-top:20px;
+            font-size:4em;
+
+            
         }
 
         span {
@@ -118,12 +132,16 @@
     <div class="container" style="width:1150px">
 
         <div class="jumbotron">
-            <span>
-                <h1>
-                    <br>&nbsp; &nbsp; KOOKMIN .UNIV
-                    <BR>&nbsp; &nbsp; Computer Science
-                </h1>
-            </span>
+            <div >
+                <div id="main-text-box">
+                    
+                        <br /><br /><br /><br />
+                        Kookmin
+                        Computer Science
+                </div>
+            </div>
+
+
         </div>
 
         <div id="lside" style="float:left;width:700px;">
@@ -196,7 +214,8 @@
                         소프트웨어 융합대학은 오픈소스 소프트웨어 교육을 기반으로 글로벌 경쟁력을 갖춘 소프트웨어 전문 인력을 양성하기 위한 교육 목표에 따라...
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="intro/intro-page.html">
                             더 알아보기
                         </a>
                     </div>
