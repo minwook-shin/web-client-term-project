@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- web client term project / sujeong-lee's code start-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -17,4 +18,5 @@
     }
     ?>
 </body>
+<!-- web client term project / sujeong-lee's code end-->
 </html>
