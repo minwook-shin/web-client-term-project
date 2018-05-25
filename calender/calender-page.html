@@ -18,6 +18,7 @@
     <!-- web client term project / minwook-shin's code end-->
 
     <html>
+
     <style>
         .software {
             background: url("https://cs.kookmin.ac.kr/images/home/visual_img1.jpg") no-repeat;
@@ -25,58 +26,76 @@
             height: 400px;
             top: 50px;
         }
-
         body {
             padding: 100px;
             position: relative;
         }
-
         .calender {
             background-color: #F8E0E0;
             padding-left: 300px white;
             width: 100%;
             margin-top: 3.5em;
-        }
 
+        }
         .cal {
             margin: 10px;
-
             display: inline-block;
             padding-left: 100px;
         }
-
-        .detail {
+        .cal.desc table {
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+        }
+        .cal.desc table td {
+            color: black;
+        }
+        .cal.desc td:first-child {
+            height: 30px;
+            width: 200px;
+        }
+        .cal.desc td:last-child {
+            height: 30px;
+        }
+	.detail {
             position: relative;
-            top: -50px;
             padding-top: 10px;
             margin-top: 5px;
+            width : 350px;
+	    height : 330px;
+	    display: inline-block;
+            vertical-align: bottom;
+        }
+        .row {
             width: 100%;
         }
-
-        table {
+        table{
+            width : 250px;
+            margin : auto;
+        }
+        table.ta{
             border: 3px solid #FF0040;
             background-color: beige;
             text-align: center;
-            padding-left: 100px;
             width: 250px;
             height: 250px;
             margin: auto;
             font-style: Consolas;
-            font-size: 20px;
+            font-size : 20px;
         }
-
         caption {
             color: #B4045F;
             text-align: center;
         }
-
         span {
             color: red;
         }
+        .row {
+            width: 100%;
+            display: inline-block;
+        }
     </style>
 </head>
-<!-- web client term project / minwook-shin's code start-->
-
 <body>
     <nav class="navbar-fixed-top navbar-inverse">
         <div class="container-fluid">
@@ -86,22 +105,11 @@
                 </a>
             </div>
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="/web-client-term-project/intro/intro-page.html">학부 소개</a>
-                </li>
-                <li>
-                    <a href="/web-client-term-project/notice/notice-page.html">공지사항</a>
-                </li>
-                <li class="active">
-                    <a href="/web-client-term-project/calender/calender-page.html">일정</a>
-                </li>
-                <li>
-                    <a href="/web-client-term-project/login/member.html">로그인</a>
-                </li>
-
+                <li><a href="/web-client-term-project/intro/intro-page.html">학부 소개</a></li>
+                <li><a href="/web-client-term-project/notice/notice-page.html">공지사항</a></li>
+                <li class="active"><a href="/web-client-term-project/calender/calender-page.html">일정</a></li>
+                <li><a href="/web-client-term-project/login/member.html">로그인</a></li>
             </ul>
-            <!-- web client term project / minwook-shin's code end-->
-
             <form class="navbar-form navbar-right" role="search" name="form">
                 <div class="form-group" name="div">
                     <input type="text" class="form-control" placeholder="키워드를 입력해주세요." name="text">
@@ -110,24 +118,20 @@
             </form>
         </div>
     </nav>
-    <div class="container" style="width:1150px">
-        <div class="software"> </div>
-
+    <div class="container" style="width:1150px; ">
+        <div class="software"></div>
         <div class="calender">
             <br>
-            <h1 style="text-align : center; color : #B4045F;">2018</h1>
+                <h1 style="text-align : center; color : #B4045F;">2018</h1>
             <br>
             <br>
-            <div>
+            <div class="row">
                 <div class="cal">
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>1월</caption>
+                    <table class="ta" style="">
+                        <caption><h4><strong>1월</h4></caption>
                         <thead>
                             <tr>
-                                <th>
-                                    <span>일</th>
+                                <th><span>일</sopan></th>
                                 <th>월</th>
                                 <th>화</th>
                                 <th>수</th>
@@ -147,261 +151,34 @@
                                 <td>6</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>7</span>
-                                </td>
+                                <td><span>7</span></td>
                                 <td>8</td>
                                 <td>9</td>
                                 <td>10</td>
                                 <td>11</td>
-                                <Td>12</td>
+                                <td>12</td>
                                 <td>13</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>14</span>
-                                </td>
+                                <td><span>14</span></td>
                                 <td>15</td>
                                 <td>16</td>
-                                <Td>17</td>
+                                <td>17</td>
                                 <td>18</td>
-                                <Td>19</td>
+                                <td>19</td>
                                 <td>20</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>21</span>
-                                </td>
-                                <Td>22</td>
+                                <td><span>21</span></td>
+                                <td>22</td>
                                 <td>23</td>
-                                <Td>24</td>
-                                <Td>25</td>
-                                <Td>26</td>
-                                <Td>27</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
                             </tr>
                             <tr>
-                                <Td>
-                                    <span>28</span>
-                                </td>
-                                <Td>29</td>
-                                <td>30</td>
-                                <td>31</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="cal">
-                    <div class="detail">
-                        <ul>
-
-                            <li>
-                                <span class='date'>12.18(월) - 01.10(수)</span>
-                                <span class='fr'>동계 계절학기 수업 기간
-
-                                    <br>16일간(월~금)
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>01.08(월) - 01.19(금)</span>
-                                <span class='fr'>2018학년도 1학기 휴・복학신청 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="cal">
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>2월</caption>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <span>일</th>
-                                <th>월</th>
-                                <th>화</th>
-                                <th>수</th>
-                                <th>목</th>
-                                <th>금</th>
-                                <th>토</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <tr></tr>
-                                <td>
-                                    <span>4</span>
-                                </td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>11</span>
-                                </td>
-                                <Td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <Td>17</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>18</span>
-                                </td>
-                                <Td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                                <Td>22</td>
-                                <td>23</td>
-                                <Td>24</td>
-                            </tr>
-                            <tr>
-                                <Td>
-                                    <span>25</span>
-                                </td>
-                                <Td>26</td>
-                                <Td>27</td>
-                                <Td>28</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="cal">
-                    <div class="detail">
-                        <ul>
-
-                            <li>
-                                <span class='date'>02.05(월) - 02.13(화)</span>
-                                <span class='fr'>2018학년도 1학기 수강신청 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>02.21(수) - 02.27(화)</span>
-                                <span class='fr'>2018학년도 1학기 등록 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>02.21(수)</span>
-                                <span class='fr'>2017학년도 전기 학위수여식
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>02.23(금)</span>
-                                <span class='fr'>2018학년도 입학식
-                                    <br>
-                                </span>
-                            </li>
-                        </ul>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="cal">
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>3월</caption>
-
-                        <thead>
-                            <tr>
-                                <th>
-                                    <span>일</th>
-                                <th>월</th>
-                                <th>화</th>
-                                <th>수</th>
-                                <th>목</th>
-                                <th>금</th>
-                                <th>토</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <tr></tr>
-                                <td>
-                                    <span>4</span>
-                                </td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>11</span>
-                                </td>
-                                <Td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <Td>17</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>18</span>
-                                </td>
-                                <Td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                                <Td>22</td>
-                                <td>23</td>
-                                <Td>24</td>
-                            </tr>
-                            <tr>
-                                <Td>
-                                    <span>25</span>
-                                </td>
-                                <Td>26</td>
-                                <Td>27</td>
-                                <Td>28</td>
+                                <td><span>28</span></td>
                                 <td>29</td>
                                 <td>30</td>
                                 <td>31</td>
@@ -409,53 +186,30 @@
                         </tbody>
                     </table>
                 </div>
-
-                <div class="cal">
+                <div class="cal desc">
                     <div class="detail">
-                        <ul>
-
-                            <li>
-                                <span class='date'>03.02(금)</span>
-                                <span class='fr'>1학기 개강일
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>03.02(금) - 03.09(금)</span>
-                                <span class='fr'>1학기 수강신청 변경/포기 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>03.13(화) - 03.16(금)</span>
-                                <span class='fr'>부전공 신청 및 다전공 변경/포기 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                        </ul>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>12.18(월) - 01.10(수)</td>
+                                    <td>동계 계절핚기 수업시간</td>
+                                </tr>
+                                <tr>
+                                    <td>01.08(월) - 01.19(금)</td>
+                                    <td>2018학년도 1학기 휴?복학신청 기간</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-
-            <div>
+            <div class="row">
                 <div class="cal">
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>4월</caption>
+                    <table class="ta">
+                        <caption><h4><strong>2월</strong></caption>
                         <thead>
                             <tr>
-                                <th>
-                                    <span>일</th>
+                                <th><span>일</span></th>
                                 <th>월</th>
                                 <th>화</th>
                                 <th>수</th>
@@ -466,344 +220,82 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <span>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>8</span>
-                                </td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <Td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>15</span>
-                                </td>
-                                <td>16</td>
-                                <Td>17</td>
-                                <td>18</td>
-                                <Td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                            </tr>
-                            <Tr>
-                                <Td>
-                                    <span>22</span>
-                                </td>
-                                <td>23</td>
-                                <Td>24</td>
-                                <Td>25</td>
-                                <Td>26</td>
-                                <Td>27</td>
-                                <Td>28</td>
-                            </tr>
-                            <tr>
-                                <Td>
-                                    <span>29</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="cal">
-                    <div class="detail">
-                        <ul>
-
-                            <li>
-                                <span class='date'>04.17(화) - 04.20(금)</span>
-                                <span class='fr'>1전공 신청/변경 및 다전공 신청 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>04.20(금) - 04.26(목)</span>
-                                <span class='fr'>1학기 중간시험 기간
-
-                                    <br>수업 8주차
-
-                                </span>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="cal">
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>5월</caption>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <span>일</th>
-                                <th>월</th>
-                                <th>화</th>
-                                <th>수</th>
-                                <th>목</th>
-                                <th>금</th>
-                                <th>토</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <Td>12</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <Td>17</td>
-                                <td>18</td>
-                                <Td>19</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>20</td>
-                                <td>21</td>
-                                <Td>22</td>
-                                <td>23</td>
-                                <Td>24</td>
-                                <Td>25</td>
-                                <Td>26</td>
-                            </tr>
-                            <Tr>
-                                <Td>
-                                    <span>27</td>
-                                <Td>28</td>
-                                <Td>29</td>
-                                <td>30</td>
-                                <td>31</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="cal">
-                    <div class="detail">
-                        <ul>
-                            <li>
-                                <span class="date">05.15(화) - 05.18(금)</span>
-                                <span class="fr">대동제
-                                    <br>4일간(화~금) </span>
-                            </li>
-                            <li>
-                                <span class="date">05.31(목)</span>
-                                <span class="fr">안전교육 제출</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="cal">
-
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>6월</caption>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <span>일</th>
-                                <th>월</th>
-                                <th>화</th>
-                                <th>수</th>
-                                <th>목</th>
-                                <th>금</th>
-                                <th>토</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td>1</td>
                                 <td>2</td>
+                                <td>3</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>3</td>
-                                <td>4</td>
+                                <td><span>4</span></td>
                                 <td>5</td>
                                 <td>6</td>
                                 <td>7</td>
                                 <td>8</td>
                                 <td>9</td>
+                                <td>10</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>10</td>
-                                <td>11</td>
-                                <Td>12</td>
+                                <td><span>11</span></td>
+                                <td>12</td>
                                 <td>13</td>
                                 <td>14</td>
                                 <td>15</td>
                                 <td>16</td>
+                                <td>17</td>
                             </tr>
                             <tr>
-                                <Td>
-                                    <span>17</td>
-                                <td>18</td>
-                                <Td>19</td>
+                                <td><span>18</span></td>
+                                <td>19</td>
                                 <td>20</td>
                                 <td>21</td>
-                                <Td>22</td>
+                                <td>22</td>
                                 <td>23</td>
+                                <td>24</td>
                             </tr>
                             <tr>
-                                <Td>
-                                    <span>24</td>
-                                <Td>25</td>
-                                <Td>26</td>
-                                <Td>27</td>
-                                <Td>28</td>
-                                <Td>29</td>
-                                <td>30</td>
+                                <td><span>25</span></td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
-                <div class="cal">
+                <div class="cal desc">
                     <div class="detail">
-                        <ul>
-
-                            <li>
-                                <span class='date'>06.05(화) - 06.08(금)</span>
-                                <span class='fr'>하계 계절학기 수강신청 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>06.08(금) - 06.14(목)</span>
-                                <span class='fr'>1학기 기말시험 기간
-
-                                    <br>수업 15주차
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>06.11(월) - 06.26(화)</span>
-                                <span class='fr'>1학기 성적 입력 기간
-
-                                    <br>
-
-
-                                </span>
-                            </li>
-                            <li>
-                                <span class='date'>06.12(화) - 06.15(금)</span>
-                                <span class='fr'>하계 계절학기 등록 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>06.13(수) - 06.29(금)</span>
-                                <span class='fr'>1학기 성적 공시 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>06.15(금) - 06.21(목)</span>
-                                <span class='fr'>1학기 보강(기말시험 가능) 기간
-
-                                    <br>수업결손 보충기간
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>06.22(금)</span>
-                                <span class='fr'>하계방학 시작일
-
-                                    <br>
-
-                                </span>
-                            </li>
-                            <li>
-                                <span class='date'>06.22(금) - 07.13(금)</span>
-                                <span class='fr'>하계 계절학기 수업/보강 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>06.27(수) - 06.29(금)</span>
-                                <span class='fr'>1학기 성적 이의신청/정정 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                        </ul>
-                        <br>
-                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>02.05(월) - 02.13(화)</td>
+                                    <td>2018학년도 1학기 수강신청 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>02.21(수) - 02.27(화)</td>
+                                    <td>2018학년도 1학기 등록 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>02.21(수)</td>
+                                    <td>2017학년도 전기 학위수여식</td>
+                                </tr>
+                                <tr>
+                                    <td>02.23(금)</td>
+                                    <td>2018학년도 입학식</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-
-            <div>
+            <div class="row">
                 <div class="cal">
-
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>7월</caption>
-
+                    <table class="ta">
+                        <caption><h4><strong>3월</caption>
                         <thead>
                             <tr>
-                                <th>
-                                    <span>일</th>
+                                <th><span>일</span></th>
                                 <th>월</th>
                                 <th>화</th>
                                 <th>수</th>
@@ -814,152 +306,46 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <span>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>8</span>
-                                </td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <Td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>15</span>
-                                </td>
-                                <td>16</td>
-                                <Td>17</td>
-                                <td>18</td>
-                                <Td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                            </tr>
-                            <Tr>
-                                <Td>
-                                    <span>22</span>
-                                </td>
-                                <td>23</td>
-                                <Td>24</td>
-                                <Td>25</td>
-                                <Td>26</td>
-                                <Td>27</td>
-                                <Td>28</td>
-                            </tr>
-                            <tr>
-                                <Td>
-                                    <span>29</td>
-                                <td>30</td>
-                                <td>31</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="cal">
-                    <div class="detail">
-
-                        <ul>
-
-                            <li>
-                                <span class='date'>06.22(금) - 07.13(금)</span>
-                                <span class='fr'>하계 계절학기 수업/보강 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>07.17(화) - 07.27(금)</span>
-                                <span class='fr'>2학기 휴・복학신청 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                        </ul>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="cal">
-
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>8월</caption>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <span>일</th>
-                                <th>월</th>
-                                <th>화</th>
-                                <th>수</th>
-                                <th>목</th>
-                                <th>금</th>
-                                <th>토</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td>1</td>
                                 <td>2</td>
                                 <td>3</td>
-                                <td>4</td>
-                            </tr>
                             <tr>
-                                <td>
-                                    <span>5</td>
+                            </tr>
+                                <td><span>4</span></td>
+                                <td>5</td>
                                 <td>6</td>
                                 <td>7</td>
                                 <td>8</td>
                                 <td>9</td>
                                 <td>10</td>
-                                <td>11</td>
                             </tr>
                             <tr>
-                                <Td>
-                                    <span>12</td>
+                                <td><span>11</span></td>
+                                <td>12</td>
                                 <td>13</td>
                                 <td>14</td>
                                 <td>15</td>
                                 <td>16</td>
-                                <Td>17</td>
-                                <td>18</td>
+                                <td>17</td>
                             </tr>
                             <tr>
-                                <Td>
-                                    <span>19</td>
+                                <td><span>18</span></td>
+                                <td>19</td>
                                 <td>20</td>
                                 <td>21</td>
-                                <Td>22</td>
+                                <td>22</td>
                                 <td>23</td>
-                                <Td>24</td>
-                                <Td>25</td>
+                                <td>24</td>
                             </tr>
                             <tr>
-                                <Td>
-                                    <span>26</td>
-                                <Td>27</td>
-                                <Td>28</td>
+                                <td><span>25</span></td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
                                 <td>29</td>
                                 <td>30</td>
                                 <td>31</td>
@@ -967,72 +353,34 @@
                         </tbody>
                     </table>
                 </div>
-
-                <div class="cal">
+                <div class="cal desc">
                     <div class="detail">
-                        <ul>
-
-                            <li>
-                                <span class='date'>08.08(수) - 08.20(월)</span>
-                                <span class='fr'>2학기 수강신청 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>08.21(화) - 08.24(금)</span>
-                                <span class='fr'>2학기 등록 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>08.22(수)</span>
-                                <span class='fr'>2017학년도 후기 학위수여식
-
-                                    <br>대학(원) 자율시행
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>08.27(월)</span>
-                                <span class='fr'>2학기 개강일
-
-                                    <br>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>08.27(월) - 09.03(월)</span>
-                                <span class='fr'>2학기 수강신청 변경/포기 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                        </ul>
-                        <br>
-                        <Br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>03.02(금)</td>
+                                    <td>1학기 개강일</td>
+                                </tr>
+                                <tr>
+                                    <td>03.02(금) - 03.09(금)</td>
+                                    <td>1학기 수강신청 변경/포기 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>03.13(화) - 03.16(금)</td>
+                                    <td>부전공 신청 및 다전공 변경/포기 기간</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-
-            <div>
+            <div class="row">
                 <div class="cal">
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>9월</caption>
+                    <table class="ta">
+                        <caption><h4><strong>4월</stron></h4></caption>
                         <thead>
                             <tr>
-                                <th>
-                                    <span>일</th>
+                                <th><span>일</span></th>
                                 <th>월</th>
                                 <th>화</th>
                                 <th>수</th>
@@ -1043,112 +391,74 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
                                 <td>
-                                    <span>2</td>
+                                    <span>1</span>
+                            </td>
+                                <td>2</td>
                                 <td>3</td>
                                 <td>4</td>
                                 <td>5</td>
                                 <td>6</td>
                                 <td>7</td>
-                                <td>8</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>9</td>
+                                <td><span>8</span></td>
+                                <td>9</td>
                                 <td>10</td>
                                 <td>11</td>
-                                <Td>12</td>
+                                <td>12</td>
                                 <td>13</td>
                                 <td>14</td>
-                                <td>15</td>
                             </tr>
-                            <Tr>
-                                <td>
-                                    <span>16</td>
-                                <Td>17</td>
+                            <tr>
+                                <td><span>15</span></td>
+                                <td>16</td>
+                                <td>17</td>
                                 <td>18</td>
-                                <Td>19</td>
+                                <td>19</td>
                                 <td>20</td>
                                 <td>21</td>
-                                <Td>22</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>23</td>
-                                <Td>24</td>
-                                <Td>25</td>
-                                <Td>26</td>
-                                <Td>27</td>
-                                <Td>28</td>
-                                <Td>29</td>
+                                <td><span>22</span></td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>30</td>
+                                <td><span>29</span></td>
+                                <td>30</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
-                <div class="cal">
+                <div class="cal desc">
                     <div class="detail">
-                        <ul>
-
-                            <li>
-                                <span class='date'>08.27(월) - 09.03(월)</span>
-                                <span class='fr'>2학기 수강신청 변경/포기 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>09.01(토)</span>
-                                <span class='fr'>제72회 개교일
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>09.18(화) - 09.21(금)</span>
-                                <span class='fr'>부전공 신청 및 다전공 변경/포기 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                        </ul>
-                        <br>
-                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>04.17(화) - 04.20(금)</td>
+                                    <td>1전공 신청/변경 및 다전공 신청 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>04.20(금) - 04.26(목)</td>
+                                    <td>1학기 중간시험 기간</td>
+                                <tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div>
-
+            <div class="row">
                 <div class="cal">
-
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>10월</caption>
-
+                    <table class="ta">
+                        <caption><h4><strong>5월</strong></h4></caption>
                         <thead>
                             <tr>
-                                <th>
-                                    <span>일</th>
+                                <th><span>일</span></th>
                                 <th>월</th>
                                 <th>화</th>
                                 <th>수</th>
@@ -1166,122 +476,68 @@
                                 <td>3</td>
                                 <td>4</td>
                                 <td>5</td>
-                                <td>6</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>7</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>6</td>
+                                <td><span>6</span></td>
                                 <td>7</td>
                                 <td>8</td>
                                 <td>9</td>
                                 <td>10</td>
                                 <td>11</td>
-                                <Td>12</td>
-                                <td>13</td>
+                                <td>12</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>14</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>13</td>
+                                <td><span>13</span></td>
                                 <td>14</td>
                                 <td>15</td>
                                 <td>16</td>
-                                <Td>17</td>
+                                <td>17</td>
                                 <td>18</td>
-                                <Td>19</td>
-                                <td>20</td>
+                                <td>19</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>21</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>20</td>
+                                <td><span>20</span></td>
                                 <td>21</td>
-                                <Td>22</td>
+                                <td>22</td>
                                 <td>23</td>
-                                <Td>24</td>
-                                <Td>25</td>
-                                <Td>26</td>
-                                <Td>27</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
                             </tr>
                             <tr>
-                                <Td>
-                                    <span>28</span>
-                                </td>
-                            </tr>
-                            <Tr>
-                                <Td>
-                                    <span>27</td>
-                                <Td>28</td>
-                                <Td>29</td>
+                                <td><span>27</span></td>
+                                <td>28</td>
+                                <td>29</td>
                                 <td>30</td>
                                 <td>31</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="cal">
+                <div class="cal desc">
                     <div class="detail">
-                        <ul>
-
-                            <li>
-                                <span class='date'>10.15(월) - 10.19(금)</span>
-                                <span class='fr'>2학기 중간시험 기간
-
-                                    <br>수업 8주차
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>10.18(목)</span>
-                                <span class='fr'>개교 72주년 기념일
-
-                                    <br>휴교일
-
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class='date'>10.23(화) - 10.26(금)</span>
-                                <span class='fr'>1전공 신청/변경 및 다전공 신청 기간
-
-                                    <br>
-
-                                </span>
-                            </li>
-
-                        </ul>
-                        <br>
-                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>05.15(화) - 05.18(금)</td>
+                                    <td>대동제</td>
+                                </tr>
+                                <tr>
+                                    <td>05.31(목)</td>
+                                    <td>안전교육 제출</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-
-            <div>
+            <div class="row">
                 <div class="cal">
-
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>11월</caption>
-
+                    <table class="ta">
+                        <caption><h4><strong>6월</strong></h4></caption>
                         <thead>
                             <tr>
-                                <th>
-                                    <span>일</th>
+                                <th><span>일</span></th>
                                 <th>월</th>
                                 <th>화</th>
                                 <th>수</th>
@@ -1301,8 +557,7 @@
                                 <td>2</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>3</td>
+                                <td><span>3</span></td>
                                 <td>4</td>
                                 <td>5</td>
                                 <td>6</td>
@@ -1311,219 +566,604 @@
                                 <td>9</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <span>10</td>
+                                <td><span>10</span></td>
                                 <td>11</td>
-                                <Td>12</td>
+                                <td>12</td>
                                 <td>13</td>
                                 <td>14</td>
                                 <td>15</td>
                                 <td>16</td>
                             </tr>
                             <tr>
-                                <Td>
-                                    <span>17</td>
+                                <td><span>17</span></td>
                                 <td>18</td>
-                                <Td>19</td>
+                                <td>19</td>
                                 <td>20</td>
                                 <td>21</td>
-                                <Td>22</td>
+                                <td>22</td>
                                 <td>23</td>
                             </tr>
                             <tr>
-                                <Td>
-                                    <span>24</td>
-                                <Td>25</td>
-                                <Td>26</td>
-                                <Td>27</td>
-                                <Td>28</td>
-                                <Td>29</td>
+                                <td><span>24</span></td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
                                 <td>30</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
-                <div class="cal">
+                <div class="cal desc">
                     <div class="detail">
-                        <li>
-                            <span class='date'>11.28(수) - 11.30(금)</span>
-                            <span class='fr'>동계 계절학기 수강신청 기간
-
-                                <br>
-
-                            </span>
-                        </li>
-
-                        </ul>
-                        <br>
-                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>06.05(화) - 06.08(금)</td>
+                                    <td>하계 계절학기 수강신청 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>06.08(금) - 06.14(목)</td>
+                                    <td>1학기 기말시험 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>06.11(월) - 06.26(화)</td>
+                                    <td>1학기 성적 입력 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>06.12(화) - 06.15(금)</td>
+                                    <td>하계 계절학기 등록 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>06.13(수) - 06.29(금)</td>
+                                    <td>1학기 성적 공시 기</td>
+                                </tr>
+                                <tr>
+                                    <td>06.15(금) - 06.21(목)</td>
+                                    <td>1학기 보강(기말시험 가능) 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>06.22(금)</td>
+                                    <td>하계방학 시작일</td>
+                                </tr>
+                                <tr>
+                                    <td>06.22(금) - 07.13(금)</td>
+                                    <td>하계 계절학기 수업/보강 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>06.27(수) - 06.29(금)</td>
+                                    <td>1학기 성적 이의신청/정정 기간</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-
-            <div>
+            <div class="row">
                 <div class="cal">
-                    <table>
-                        <caption>
-                            <h4>
-                                <strong>12월</caption>
+                    <table class="ta">
+                        <caption><h4><strong>7월</strong></h4></caption>
+                        <thead>
+                            <tr>
+                                <th><span>일</span></th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                                <th>토</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span>1</span></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td><span>8</span></td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td><span>15</span></td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td><span>22</span></td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td><span>29</span></td>
+                                <td>30</td>
+                                <td>31</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-                <thead>
-                    <tr>
-                        <th>
-                            <span>일</th>
-                        <th>월</th>
-                        <th>화</th>
-                        <th>수</th>
-                        <th>목</th>
-                        <th>금</th>
-                        <th>토</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <Td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                    </tr>
-                    <Tr>
-                        <td>
-                            <span>16</td>
-                        <Td>17</td>
-                        <td>18</td>
-                        <Td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                        <Td>22</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>23</td>
-                        <Td>24</td>
-                        <Td>25</td>
-                        <Td>26</td>
-                        <Td>27</td>
-                        <Td>28</td>
-                        <Td>29</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>30</td>
-                        <td>31</td>
-                    </tr>
-                </tbody>
-                </table>
+                <div class="cal desc">
+                    <div class="detail">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>06.22(금) - 07.13(금)</td>
+                                    <td>하계 계절학기 수업/보강 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>07.17(화) - 07.27(금)</td>
+                                    <td>2학기 휴학복학신청 기간</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-
-            <div class="cal">
-                <div class="detail">
-                    <ul>
-
-                        <li>
-                            <span class='date'>12.03(월) - 12.07(금)</span>
-                            <span class='fr'>2학기 기말시험 기간
-
-                                <br>수업 15주차
-
-                            </span>
-                        </li>
-
-                        <li>
-                            <span class='date'>12.05(수) - 12.07(금)</span>
-                            <span class='fr'>동계 계절학기 등록 기간
-
-                                <br>
-
-                            </span>
-                        </li>
-
-                        <li>
-                            <span class='date'>12.06(목) - 12.20(목)</span>
-                            <span class='fr'>2학기 성적 입력 기간
-
-                                <br>
-
-                            </span>
-                        </li>
-
-                        <li>
-                            <span class='date'>12.10(월) - 12.14(금)</span>
-                            <span class='fr'>2학기 보강(기말시험 가능) 기간
-
-                                <br>수업결손 보충기간
-
-                            </span>
-                        </li>
-                        <li>
-                            <span class='date'>12.12(수) - 12.26(수)</span>
-                            <span class='fr'>2학기 성적 공시 기간
-
-                                <br>
-
-                            </span>
-                        </li>
-
-                        <li>
-                            <span class='date'>12.17(월)</span>
-                            <span class='fr'>동계방학 시작일
-
-                                <br>
-
-                            </span>
-                        </li>
-
-                        <li>
-                            <span class='date'>12.17(월) - 01.09(수)</span>
-                            <span class='fr'>동계 계절학기 수업/보강 기간
-
-                                <br>
-
-                            </span>
-                        </li>
-
-                        <li>
-                            <span class='date'>12.21(금) - 12.26(수)</span>
-                            <span class='fr'>2학기 성적 이의신청/정정 기간
-
-                                <br>
-
-                            </span>
-                        </li>
-
-                    </ul>
-                    <br>
-                    <br>
+            <div class="row">
+                <div class="cal">
+                    <table class="ta">
+                        <caption><h4><strong>8월</strong></h4></caption>
+                        <thead>
+                            <tr>
+                                <th><span>일</span></th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                                <th>토</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td><span>5</span></td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td><span>12</span></td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td><span>19</span></td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td><span>26</span></td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cal desc">
+                    <div class="detail">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>08.08(수) - 08.20(월)</td>
+                                    <td>2학기 수강신청 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>08.21(화) - 08.24(금)</td>
+                                    <td>2학기 등록 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>08.22(수)</td>
+                                    <td>2017학년도 후기 학위수여식</td>
+                                </tr>
+                                <tr>
+                                    <td>08.27(월)</td>
+                                    <td>2학기 개강일</td>
+                                </tr>
+                                <tr>
+                                    <td>08.27(월) - 09.03(월)</td>
+                                    <td>2학기 수강신청 변경/포기 기간</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cal">
+                    <table class="ta">
+                        <caption><h4><strong>9월</strong></h4></caption>
+                        <thead>
+                            <tr>
+                                <th><span>일</span></th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                                <th>토</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><span>2</span></td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td><span>9</span></td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td><span>16</span></td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td><span>23</span></td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                            <td><span>30</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cal desc">
+                    <div class="detail">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>08.27(월) - 09.03(월)</td>
+                                    <td>2학기 수강신청 변경/포기 기간</td>
+                                </tr>
+                                <tr>
+                                    <td>09.01(토)</td>
+                                    <td>제72회 개교일</td>
+                                </tr>
+                                <tr>
+                                    <td>09.18(화) - 09.21(금)</td>
+                                    <td>부전공 신청 및 다전공 변경/포기 기간</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cal">
+                    <table class="ta">
+                        <caption><h4><strong>10월</strong></h4></caption>
+                            <thead>
+                                <tr>
+                                    <th><span>일</span></th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                    <th>토</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                </tr>
+                                    <td><span>7</span></td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                <td><span>14</span></td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td><span>21</span></td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <td><span>28</span></td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cal desc">
+                        <div class="detail">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>10.15(월) - 10.19(금)</td>
+                                        <td>2학기 중간시험 기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10.18(목)</td>
+                                        <td>개교 72주년 기념일</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10.23(화) - 10.26(금)</td>
+                                        <td>1전공 신청/변경 및 다전공 신청 기간</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cal">
+                        <table class="ta">
+                            <caption><h4><strong>11월</strong></h4></caption>
+                            <thead>
+                                <tr>
+                                    <th><span>일</span></th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                    <th>토</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><span>4</span></td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td><span>11</span></td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td><span>18</span></td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                </tr>
+                                <tr>
+                                    <td><span>25</span></td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cal desc">
+                        <div class="detail">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>11.28(수) - 11.30(금)</td>
+                                        <td>동계 계절학기 수강신청 기간</td>
+                                    </tr>
+                                <tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cal">
+                        <table class="ta">
+                            <caption><h4><strong>12월</strong></h4></caption>
+                            <thead>
+                                <tr>
+                                    <th><span>일</span></th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                    <th>토</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td><span>2</span></td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td><span>9</span></td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td><span>16</span></td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td><span>23</span></td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td><span>30</span></td>
+                                    <td>31</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cal desc">
+                        <div class="detail">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>12.03(월) - 12.07(금)</td>
+                                        <td>2학기 기말시험 기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.05(수) - 12.07(금)</td>
+                                        <td>동계 계절학기 등록 기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.06(목) - 12.20(목)</td>
+                                        <td>2학기 성적 입력 기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.10(월) - 12.14(금)</td>
+                                        <td>2학기 보강(기말시험 가능) 기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.12(수) - 12.26(수)</td>
+                                        <td>2학기 성적 공시 기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.17(월)</td>
+                                        <td>동계방학 시작일</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.17(월) - 01.09(수)</td>
+                                        <td>동계 계절학기 수업/보강 기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.21(금) - 12.26(수)</td>
+                                        <td>2학기 성적 이의신청/정정 기간</td>
+                                    </tr>
+                                <tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
 </body>
-
 </html>
