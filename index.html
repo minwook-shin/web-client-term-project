@@ -13,10 +13,9 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script type="text/javascript" src="main-calander.js" charset="utf-8"></script>
     <script type="text/javascript" src="login/search.js" charset="utf-8"></script>
     <title>MAIN</title>
-    <!-- web client term project / minwook-shin's code end-->
+    
 
     <style>
         .jumbotron {
@@ -42,20 +41,6 @@
 
 
         }
-
-        #q {
-            display: inline-block;
-            width: 200px;
-            height: 100px;
-            font-size: 1em;
-            margin: 10px 60px 10px 10px;
-            color: black;
-            background-color: gainsboro;
-            text-decoration: none;
-            text-align: center;
-            position: center center;
-        }
-
         span {
             color: whitesmoke;
         }
@@ -68,7 +53,9 @@
             background-color: kajfkljal;
 
         }
-
+        /*web client term project / minwook-shin's code end */
+        
+        /*웹클라이언트 4조 안희운 code start*/
         #notice {
             width: 700px;
         }
@@ -97,9 +84,22 @@
         #tabledate {
             float: right;
         }
-
-        .table {}
+        #q {
+            width:100px;
+            font-size: 1em;
+            text-align: left;
+            margin-left:10px;
+        }
+        #qb{
+            width:200px;
+            background-color:gainsboro;
+            margin:10px 55px 10px 10px;
+            border:0.1px solid gray;
+            box-shadow:1px 0.3px 0.2px gray;
+        }
     </style>
+    <!-- 웹클라이언트 4조 안희운 code end-->
+
     <!-- web client term project / minwook-shin's code start-->
 
     <script type="text/javascript">
@@ -120,7 +120,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="/web-client-term-project/intro/intro-page.html">학부 소개</a>
+                    <a href="intro/intro-page.html">학부 소개</a>
                 </li>
                 <li>
                     <a href="/web-client-term-project/notice/notice-page.html">공지사항</a>
@@ -201,10 +201,11 @@
                                     <tr>
                                         <td>
                                             2018 글쓰기 프로그램
-                                            <큐레이션 리딩 : 이공계 학생… </td>
-                                                <td>강예진</td>
-                                                <td>18.04.27</td>
-                                                <td>81</td>
+                                            <큐레이션 리딩 : 이공계 학생…
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.27</td>
+                                        <td>81</td>
                                     </tr>
                                     <tr>
                                         <td>자동차공학전문대학원 진학설명회 안내</td>
@@ -218,6 +219,12 @@
                                         <td>18.04.25</td>
                                         <td>168</td>
                                     </tr>
+                                    <tr>
+                                        <td>2018 국민 공학 Festa 참가 안내</td>
+                                        <td>강예진</td>
+                                        <td>18.04.23</td>
+                                        <td>225</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -229,13 +236,14 @@
                     </a>
                 </div>
             </div>
-            <div id="intro" class="col-lg-4">
+            <div id="intro" class="col-lg-4" style="margin-top:45px">
                 <div class="mdl-shadow--2dp">
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">학부 소개</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        소프트웨어 융합대학은 오픈소스 소프트웨어 교육을 기반으로 글로벌 경쟁력을 갖춘 소프트웨어 전문 인력을 양성하기 위한 교육 목표에 따라...
+                        소프트웨어 융합대학은 오픈소스 소프트웨어 교육을 기반으로 글로벌 경쟁력을 갖춘 소프트웨어 전문 인력을 양성하기 위한 교육 목표에 따라
+                        2학년까지 학부기초과목에서 습득한 튼튼한 기초 소프트웨어 지식을 바탕으로...
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="intro/intro-page.html">
@@ -250,13 +258,13 @@
                 </div>
             </div>
         </div>
-        <div id="rside" style="float:left;width:400px">
-            <div id="date" class="col-lg-4">
+        <div id="rside" style="float:left;width:400px;">
+            <div id="date" class="col-lg-3">
                 <div class="demo-card-event mdl-shadow--2dp">
                     <div class="mdl-card__title mdl-card--expand">
                         <div style="display:block;padding-bottom:30px">
                             <div class="calander"></div>
-                            <div class="panel panel-default" style="margin:30px 0px 30px 0px;height:100px;background-color:lightyellow">
+                            <div class="panel panel-default" style="margin:30px 0px 30px 0px;height:100px;background-color:lightyellow;width:300px">
                                 <div class="panel-body" id="monthinfo">
                                 </div>
                             </div>
@@ -274,23 +282,229 @@
             </div>
 
         </div>
-        <hr />
-        <div class="mdl-shadow--2dp" style="width:100%;height:130px;display:inline-block;margin-top:10px">
+        <div class="mdl-shadow--2dp" style="width:95.4%;height:100px;display:inline-block;margin-left:17px;margin-top:50px">
 
-            <a class="mdl-shadow--2dp" id="q" href="https://cs.kookmin.ac.kr/">
-                국민대 소프트웨어 학부
-            </a>
-            <a class="mdl-shadow--2dp" id="q" href="https://github.com/minwook-shin/web-client-term-project">
-                깃허브 작업창
-            </a>
-            <a class="mdl-shadow--2dp" id="q" href="https://ktis.kookmin.ac.kr/">
-                국민대 종합정보시스템
-            </a>
-            <a class="mdl-shadow--2dp" id="q" href="http://lab.cs.kookmin.ac.kr/">
-                Lab Anywhere
-            </a>
+            <div id="qb" style="float:left">
+                <div class="mdl-card__title">국민대 소프트웨어 학부</div>
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                   id="q" href="https://cs.kookmin.ac.kr/">
+                    확인하기
+                </a>
+            </div>
+            <div id="qb" style="float:left">
+                <div class="mdl-card__title"> 깃허브 작업창</div>
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="q" href="https://github.com/minwook-shin/web-client-term-project">
+                    확인하기
+                </a>
+            </div>
+            <div id="qb" style="float:left">
+                <div class="mdl-card__title"> 국민대 종합정보시스템</div>
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="q" href="https://ktis.kookmin.ac.kr/">
+                    확인하기
+                </a>
+            </div>
+            <div id="qb" style="float:left">
+                <div class="mdl-card__title"> Lab Anywhere</div>
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="q" href="http://lab.cs.kookmin.ac.kr/">
+                    확인하기
+                </a>
+            </div>
         </div>
     </div>
+    <!-- 달력 구현 (안희운)-->
+    <script>
+        window.onload = function () {
+            var calanders = document.getElementsByClassName('calander');
+            var calander = calanders[0];
+            calander.date = new Date();
+            calander.date.setDate(1);
+            month = calander.date.getMonth();
+            year = calander.date.getYear();
+            day = calander.date.getDay();
+            today = new Date().getDate();
+            todaysmonth = month;
+            var fulldate;
+            getfulldate(year, month);
+
+            /*----------------------------------*/
+            /*-----------div 구현---------------*/
+            var span = document.createElement("span");
+            span.style.color = "black"
+            var premon = document.createElement("img");
+            premon.src = "image/leftarrow.png";
+            premon.onclick = function () {
+                if (month > 0) {
+                    month -= 1;
+                    getfulldate(year, month);
+
+                    day = day - (fulldate % 7) + 7;
+                    day %= 7;
+                    remove();
+                    loadtable();
+                }
+            }
+            var nextmon = document.createElement("img");
+            nextmon.src = "image/rightarrow.png";
+            nextmon.onclick = function () {
+                if (month < 11) {
+                    var d = getfulldate(year, month);
+                    month += 1;
+                    getfulldate(year, month);
+                    day = day + (d % 7);
+                    day %= 7;
+
+                    remove();
+                    loadtable();
+                }
+            }
+            premon.style = "width:20px;height:20px;float:left;margin-top:20px";
+            nextmon.style = "width:30px;height:30px;float:right;margin-top:15px";
+            span.innerHTML = "20" + (year - 100) + "년 " + (month + 1) + "월"
+            span.style = "font-size:2em;margin-left:50px"
+            calander.appendChild(premon);
+            calander.appendChild(span);
+            calander.appendChild(nextmon);
+            /*----------------------------------*/
+            var hr = document.createElement("hr");
+            calander.appendChild(hr);
+            var table;
+            loadtable();
+
+            /*--------- 테이블 구현-------------*/
+            function loadtable() {
+                span.innerHTML = "20" + (year - 100) + "년 " + (month + 1) + "월"
+                table = document.createElement("table");
+                calander.appendChild(table);
+                var sheet = document.createElement('style')
+                sheet.innerHTML =
+                    ".calander td{border: 0.3px solid gray;}" +
+                    ".calander table{width:300px;height:300px;text-align:center}" +
+                    ".calander span{color:black}"
+                document.body.appendChild(sheet);
+
+                var tr = document.createElement("tr");
+                days = ["일", "월", "화", "수", "목", "금", "토"]
+                for (var i = 0; i < 7; i++) {
+                    var th = document.createElement("th");
+                    th.style.textAlign = "center"
+                    th.style.borderBottom = "2px solid darkblue"
+                    th.innerHTML = days[i];
+                    if (i == 0) th.style.color = "red";
+                    if (i == 6) th.style.color = "blue";
+                    tr.appendChild(th);
+                }
+                table.appendChild(tr);
+
+                var tr = document.createElement("tr");
+                var number = 1;
+                for (var i = 0; i < day; i++) {
+                    var td = document.createElement("td");
+                    td.innerHTML = " ";
+
+                    tr.appendChild(td);
+                }
+
+                for (var i = 0; i < 7 - day; i++) {
+                    var td = document.createElement("td");
+                    td.innerHTML = number;
+                    if (number == today && month == todaysmonth) td.style.backgroundColor = "lightgray"
+                    if (i == 0 && day == 0) td.style.color = "red";
+                    if (i == 6 - day) td.style.color = "blue";
+                    number++;
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr);
+                for (var i = 0; i < ((fulldate + day) / 7) - 2; i++) {
+                    var tr = document.createElement("tr");
+                    for (var j = 0; j < 7; j++) {
+                        td = document.createElement("td");
+                        td.innerHTML = number;
+                        if (number == today && month == todaysmonth) td.style.backgroundColor = "lightgray";
+                        number++;
+                        if (j == 0) td.style.color = "red";
+                        if (j == 6) td.style.color = "blue"
+                        tr.appendChild(td);
+                    }
+                    table.appendChild(tr);
+                }
+                var tr = document.createElement("tr");
+                for (var i = 0; i < 7; i++) {
+                    var td = document.createElement("td");
+                    if (i == 0) td.style.color = "red";
+                    if (i == 6) td.style.color = "blue";
+                    if (number <= fulldate) {
+                        td.innerHTML = number;
+                        number++;
+                    }
+                    else {
+                        td.innerHTML = " ";
+                    }
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr);
+                var info = document.getElementById("monthinfo");
+                if(month == 0)
+                    info.innerHTML = "01.08 - 01.19  2018학년도 1학기 휴학복학신청 기간"
+                if(month == 1)
+                    info.innerHTML = "02.05 - 02.13 2018학년도 1학기 수강신청 기간"
+                if(month ==2)
+                    info.innerHTML = "03.02 1학기 개강일 <br> 03.02 - 03.09 1학기 수강신청 변경/포기 기간"
+                if(month == 3)
+                    info.innerHTML = "04.17- 04.20	1전공 신청/변경 및 다전공 신청 기간"
+                if(month == 4)
+                    info.innerHTML = "05.31 안전교육 이수증 제출"
+                if(month == 5)
+                    info.innerHTML = "06.05 - 06.08	하계 계절학기 수강신청 기간 <br>06.11 - 06.26 1학기 성적 입력 기간"
+                if(month == 6)
+                    info.innerHTML = "7월은 일정이 없습니다"
+                if(month == 7)
+                    info.innerHTML = "08.08 - 08.20 2학기 수강신청 기간 <br> 08.27(월) - 09.03(월)	2학기 수강신청 변경/포기 기간"
+                if(month == 8)
+                    info.innerHTML = "09.01 제72회 개교일"
+                if(month == 9)
+                    info.innerHTML = "10.23 - 10.26 1전공 신청/변경 및 다전공 신청 기간"
+                if(month == 10)
+                    info.innerHTML = "11.28 - 11.30	동계 계절학기 수강신청 기간"
+                if(month == 11)
+                    info.innerHTML = "12.05 - 12.07	동계 계절학기 등록 기간 <br> 12.06 - 12.20 2학기 성적 입력 기간"
+            }
+            function remove() {
+                calander.removeChild(table);
+            }
+            function getfulldate(year, month) {
+                switch (month + 1) {
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12:
+                        fulldate = 31;
+                        break;
+                    case 4:
+                    case 6:
+                    case 9:
+                    case 11:
+                        fulldate = 30;
+                        break;
+                    case 2:
+                        if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+                            fulldate = 29;
+                        }
+                        else {
+                            fulldate = 28;
+                        }
+
+                }
+                return fulldate;
+            }
+
+
+        }
+
+    </script>
+    <!-- 웹클라이언트 4조 안희운 code end-->
 
 
 </body>
