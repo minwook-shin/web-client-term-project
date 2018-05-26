@@ -17,11 +17,11 @@ Caution: This repository is private, but the published site will be public.
 
 * [NEW Navigator Version 2 Part](https://minwook-shin.github.io/web-client-term-project/css/navi_test_2.html)
 
-## Available Frameworks
+## Frameworks
 
-https://getmdl.io/components/index.html
+* Material Design Lite (Apache License 2.0)
 
-http://bootstrapk.com/components/
+* bootstrap (MIT license)
 
 ## Development
 
