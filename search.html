@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<!-- web client term project / sujeong-lee's code start -->
 <html lang="en">
 
 <head>
@@ -7,35 +8,65 @@
     <meta name="robots" content="nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/Style.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/material/material.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/Style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-
-    <title>MEMBER</title>
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    var getParameters = function (paramName) {
+    // 리턴값을 위한 변수 선언
+    var returnValue;
+    // 현재 URL 가져오기
+    var url = location.href;
+    // get 파라미터 값을 가져올 수 있는 ? 를 기점으로 slice 한 후 split 으로 나눔
+    var parameters = (url.slice(url.indexOf('?') + 1, url.length)).split('&');
+    // 나누어진 값의 비교를 통해 paramName 으로 요청된 데이터의 값만 return
+    for (var i = 0; i < parameters.length; i++) {
+        var varName = parameters[i].split('=')[0];
+        if (varName.toUpperCase() == paramName.toUpperCase()) {
+            returnValue = parameters[i].split('=')[1];
+            return decodeURIComponent(returnValue);
         }
-        .header {
-            width: 100%;
-            height: 300px;
-            float: left;
-            background: blueviolet;
-        }
-        .section {
-            width: 100%;
-            height: 700px;
-            float: left;
-            background: aqua;
-        }
-    </style>
+    }
+    };
+    </script>
+<style>
+* {
+  box-sizing: border-box;
+}
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+  background-color:#ffffff
+}
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+#myTable tr.header, #myTable tr:hover {
+  background-color: #ddd;
+}
+    
+</style>
 </head>
 
 <body>
@@ -43,37 +74,260 @@
         <nav class="navbar-fixed-top navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="../index.html">
                         KMU CS
                     </a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="intro/intro-page.html">학부 소개</a>
+                        <a href="../intro/intro-page.html">학부 소개</a>
                     </li>
                     <li>
-                        <a href="notice/notice-page.html">공지사항</a>
+                        <a href="../notice/notice-page.html">공지사항</a>
                     </li>
                     <li>
-                        <a href="calender/calender-page.html">일정</a>
+                        <a href="../calender/calender-page.html">일정</a>
                     </li>
                     <li>
-                        <a href="login/member.html">로그인</a>
+                        <a href="../login/member.html">로그인</a>
                     </li>
                     <li class="active">
-                        <a href="login/search.html">검색</a>
+                        <a href="../login/search.html">검색</a>
                     </li>
 
                 </ul>
             </div>
-        </nav>
-        <header class="header">
-            <p>검색한 단어:"---"</p>
-        </header>
-        <section class="section">
-            <p>검색 내용 출력</p>
-        </section>
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Search for titles.." title="Type in a title">
+            <table id="myTable">
+                    <tr class="header">
+                      <th style="width:25%;">제목</th>
+                      <th style="width:25%;">글쓴이</th>
+                      <th style="width:25%;">작성일</th>
+                      <th style="width:25%;">첨부</th>
+                    </tr>
+                                    <tr>
+                                    <td>(~5/28) 라인*정보과학회 블록체인 경진대회
+                                    </td>
+                                    <td>강예진</td>
+                                    <td>18.05.08</td>
+                                    <td>
+                                        설명회_자료.pdf
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018학년도 하계 현장실습(인턴)
+                                        </td>
+                                        <td>이지영</td>
+                                        <td>18.05.04</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>05/18) 2018-1 일반대학원 설명회
+                                        </td>
+                                        <td>이지영</td>
+                                        <td>18.05.02</td>
+                                        <td>
+                                            설명회_자료.pdf
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018학년도 하계 SGE 프로그램 신청 안내
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.30</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018 글쓰기 프로그램
+                                            <큐레이션 리딩 : 이공계 학생… </td>
+                                                <td>강예진</td>
+                                                <td>18.04.27</td>
+                                                <td>
+                                                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>자동차공학전문대학원 진학설명회 안내
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.25</td>
+                                        <td>
+                                            대학원_신청서.docx
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>[사전신청] 2018 IITP Tech & Future Insight Spring
+                                        </td>
+                                        <td>강지혜</td>
+                                        <td>18.04.25</td>
+                                        <td>
+                                            프로그램_신청서.docx
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018 국민 공학 Festa 참가 안내
+                                        </td>
+                                        <td>안성하</td>
+                                        <td>18.04.23</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>(~5/18) NET 챌린지 캠프 SEASON5
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.05.04</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(~05/09)[동우화인켐㈜] 2018년 상반기 신입,경력사…
+                                        </td>
+                                        <td>이지영</td>
+                                        <td>18.05.03</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(~10/31) 2018 청년관광 아이디어 공모전
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.05.03</td>
+                                        <td>
+                                            공모전_안내.hwp
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018 정보보호 해커톤 설명회
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.27</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>[마감]'개발자로 살아남기' 강연 신청
+                                        </td>
+                                        <td>신나라</td>
+                                        <td>18.04.24</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>[테크노디자인전문대학원] Culture and Food Design...
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.23</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>교내 미사용 방치 오토바이 및 자전거 처리 안내
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.23</td>
+                                        <td>
+                                            안내문.pdf
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>(~04/29)공채 서류전형 FREE PASS, 격이 다른 마케팅…
+                                        </td>
+                                        <td>이지영</td>
+                                        <td>18.04.23</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>(주)그렙 - 알고리즘 콘텐츠 매니저(신입) 인재 모집
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.23</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>(~5/8)KT 5G 서비스 아이디어 공모전
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.23</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>클라우드 기반 SW개발환경 지원사업 신청 안내
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.20</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>자율주행스튜디오 주말 개방 안내
+                                        </td>
+                                        <td>이지영</td>
+                                        <td>18.04.20</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>★2018-1 C++프로그래밍 중간고사 장소 공지
+                                        </td>
+                                        <td>이지영</td>
+                                        <td>18.04.19</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018년도 SW중심대학 공동인턴십 참가희망자 모집(~…
+                                        </td>
+                                        <td>SW중심대학사업단</td>
+                                        <td>18.04.19</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>(05/10)[동원그룹] 2018년 상반기 동원그룹 채용형 …
+                                        </td>
+                                        <td>이지영</td>
+                                        <td>18.04.19</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> [SW기술협] SW우수 취업 훈련생 모집
+                                        </td>
+                                        <td>강예진</td>
+                                        <td>18.04.19</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                  <!-- 게시판에 현재 존재하는 모든 게시물들의 목록을 가져왔습니다.-->
+                  </table>
+                  
+                  <script>
+                  $(document).ready(function() {
+                        $('#myInput').val(getParameters('searchinput'));
+                    });
+                  function search() {
+                    var input, filter, table, tr, td, i;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+                    for (i = 0; i < tr.length; i++) {
+                      td = tr[i].getElementsByTagName("td")[0];
+                      if (td) {
+                        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                          tr[i].style.display = "";
+                        } else {
+                          tr[i].style.display = "none";
+                        }
+                      }       
+                    }
+                  }
+                  </script>
+                  
+        
     </center>
 </body>
-
+<!-- web client term project / sujeong-lee's code end -->
 </html>
