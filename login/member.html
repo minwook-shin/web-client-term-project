@@ -59,9 +59,7 @@
             padding: 15px;
             color: #FFFFFF;
             font-size: 14px;
-            -webkit-transition: all 0.3 ease;
-            transition: all 0.3 ease;
-            cursor: pointer;
+            cursor: pointer; 
         }
 
         .form .message {
@@ -80,17 +78,45 @@
         }
 
         body {
-            background: #C2DFFF;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(right, #82CAFF, #82CAFA);
-            background: -moz-linear-gradient(right, #82CAFF, #82CAFA);
-            background: -o-linear-gradient(right, #82CAFF, #82CAFA);
-            background: linear-gradient(to left, #82CAFF, #82CAFA);
-            font-family: "Roboto", sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            background: #82CAFF;
         }
     </style>
+    <script>
+        $('#register-form').on('submit',register('input'));
+        $('#login-form').on('submit',login('input'));
+    function register(){
+        var r_us_number = $('#r_number').val();
+        var r_us_pw = $('#r_pw').val();
+        var r_us_outlook = $('#r_outlook').val();
+        if(r_us_number.length == 8){
+            if(r_us_outlook.indexOf('@') != -1 && 
+            r_us_outlook.indexOf('kookmin') != -1){
+                alert("회원가입 되었습니다.");
+            }
+            else{
+                alert("회원가입 불가능. 사유 : outlook 계정 입력불량");
+            }
+        }
+        else{
+            alert("회원가입 불가능.")
+        }
+    }
+    function login(){
+        var l_us_number = $('#l_number').val();
+        var l_us_pw = $('#l_pw').val();
+        if(l_us_number.length == 8 && l_us_number.indexOf('2017') != -1){
+            if(l_us_pw == 'pw'){
+                alert("로그인 되었습니다.");
+            }
+            else{
+                alert("로그인 불가능. 사유 : 패스워드가 다릅니다.")
+            }
+        }
+        else{
+            alert("로그인 불가능. 사유 : 제대로 된 아이디를 입력하세요.")
+        }
+    }
+    </script>
 </head>
 <!-- web client term project / sujeong-lee's code end-->
 <!-- web client term project / minwook-shin's code start-->
@@ -130,20 +156,20 @@
         <form>
             <div class="login-page">
                 <div class="form">
-                    <form class="register-form">
-                        <input type="text" placeholder="학번 / 사번" />
-                        <input type="password" placeholder="비 밀 번 호" />
-                        <input type="text" placeholder="학교 outlook 계정" />
-                        <input id="buttons" type="button" value="가입하기" onclick="javascript:alert('가입되셨습니다.')"/>
+                    <form id="register-form">
+                        <input id="r_number" type="text" placeholder="학번 / 사번" />
+                        <input id="r_pw" type="password" placeholder="비 밀 번 호" />
+                        <input id="r_outlook" type="text" placeholder="학교 outlook 계정" />
+                        <button id="buttons" onclick="register()">가입하기</button>
                         <p class="message">가입하지 않으셨나요?
                             <a href="#">계정을 만드세요</a>
                         </p>
                     </form>
                     <br>
-                    <form class="login-form">
-                        <input type="text" placeholder="학번 / 사번" />
-                        <input type="password" placeholder="비 밀 번 호" />
-                        <input id="buttons" type="button" value="로그인" onclick="javascript:alert('로그인 되었습니다.')"/>
+                    <form id="login-form">
+                        <input id="l_number" type="text" placeholder="학번 / 사번" />
+                        <input id="l_pw" type="password" placeholder="비 밀 번 호" />
+                        <button id="buttons" onclick="login()">로그인</button>
                         <p class="message">이미 가입하셨나요?
                             <a href="#">로그인 하세요</a>
                         </p>
