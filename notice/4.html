@@ -40,11 +40,9 @@
 
             </ul>
 
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="제목,글쓴이,내용 검색">
-                </div>
-                <button type="button" class="btn btn-default" onclick="search()">검색하기</button>
+            <form class="navbar-form navbar-right" role="search" action="search.html">
+                <input type="text" class="form-control" placeholder="검색어를 입력해주세요." name="searchinput">
+                <input type="submit" class="btn btn-default" value="검색"></input>
             </form>
         </div>
     </nav>
@@ -307,6 +305,15 @@
                 </li>
             </ul>
         </nav>
+        <form class="form-inline" style="text-align: center" action="search_select.html">
+            <select name="selection">
+                <option>제목</option>
+                <option>글쓴이</option>
+                <option>날짜</option>
+            </select>
+            <input type="text" class="form-control" placeholder="제목, 글쓴이, 날짜로 검색" name="searchinput"/>
+            <input type="submit" value="검색" class="btn btn-default btn-lg"/>
+        </form>
         <a class="btn btn-default pull-right">게시판 별 게시물 보존기한 안내 ></a> 
         <a class="btn btn-default pull-right" href="글쓰기.html">글쓰기</a>
     </section>
