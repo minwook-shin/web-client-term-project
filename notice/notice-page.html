@@ -306,6 +306,15 @@
                 </li>
             </ul>
         </nav>
+        <form class="form-inline" style="text-align: center" action="search_select.html">
+            <select name="selection">
+                <option>제목</option>
+                <option>글쓴이</option>
+                <option>날짜</option>
+            </select>
+            <input type="text" class="form-control" placeholder="제목, 글쓴이, 날짜로 검색" name="searchinput"/>
+            <input type="submit" value="검색" class="btn btn-default btn-lg"/>
+        </form>
         <a class="btn btn-default pull-right">게시판 별 게시물 보존기한 안내 ></a>
         <a class="btn btn-default pull-right" href="글쓰기.html">글쓰기</a>
     </section>
