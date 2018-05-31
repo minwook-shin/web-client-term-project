@@ -89,7 +89,6 @@
         var r_us_pw = $('#r_pw').val();
         var r_us_outlook = $('#r_outlook').val();
         if(r_us_number.length == 8){
-            if(!isNaN(r_us_number)){
                 if(r_us_outlook.indexOf('@') != -1 && 
                 r_us_outlook.indexOf('kookmin') != -1){
                     alert("회원가입 되었습니다.");
@@ -100,10 +99,6 @@
             else{
                 alert("회원가입 불가능. 사유 : 학번/사번은 숫자로만 이루어져 있습니다.");
             }
-            }
-        }
-        else{
-            alert("회원가입 불가능. 사유 : 학번/사번은 8자리입니다.")
         }
     }
     function login(){
